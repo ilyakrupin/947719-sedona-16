@@ -1,1 +1,45 @@
-/* intro.scss */
+.intro {
+  margin-top: 56px;
+
+  &__image {
+    min-height: 389px;
+    width: 320px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: 320px, 282px, auto;
+  }
+
+  &__slogan {
+    margin-top: 39px;
+    margin-bottom: 27px;
+
+    @include font(18px, 700, 26px);
+    color: $black;
+  }
+
+  &__advantages {
+    margin-bottom: 5px;
+
+    @include font(14px, 400, 26px);
+    color: $grey-black;
+  }
+
+  &__slogan,
+  &__advantages {
+    padding-left: 31px;
+    padding-right: 34px;
+    text-align: center;
+  }
+
+  &::after {
+    z-index: 100;
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/bg-intro-triangle-mobile-invert.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

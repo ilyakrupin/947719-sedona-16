@@ -1,0 +1,11 @@
+.header {
+  position: relative;
+  z-index: 100;
+
+  @include mobile;
+
+  &__logo-image {
+    position: absolute;
+    margin-left: 109px;
+  }
+}

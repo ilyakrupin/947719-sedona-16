@@ -1,18 +1,19 @@
 /* style.scss */
-@import "normalize";
-@import "mixins";
 @import "variables";
+@import "mixins";
+@import "normalize";
+// @import "pixel-perfect";
 @import "blocks/academy";
 @import "blocks/advantages";
-@import "blocks/button-site";
+@import "blocks/button";
 @import "blocks/footer";
 @import "blocks/gallery";
 @import "blocks/hotel";
 @import "blocks/intro";
 @import "blocks/header-nav";
 @import "blocks/map";
-@import "blocks/page-header";
-@import "blocks/page-main";
+@import "blocks/header";
+@import "blocks/main";
 @import "blocks/presentation";
 @import "blocks/social";
 @import "blocks/video";

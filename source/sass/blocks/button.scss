@@ -1,0 +1,26 @@
+.button {
+
+  display: block;
+  text-align: center;
+  background-color: $light-grey-blue;
+
+  &:link,
+  &:visited {
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $grey-blue;
+  }
+
+  &:active,
+  &:active {
+    background-color: $dusty-blue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: $very-light-grey;
+  }
+}

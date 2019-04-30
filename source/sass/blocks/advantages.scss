@@ -1,1 +1,86 @@
-/* advantages.scss */
+.advantages {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    padding-top: 20px;
+    padding-left: 27px;
+    padding-right: 27px;
+    background-color: $light-grey-blue;
+  }
+
+  &__wrapper--indent {
+    padding-top: 60px;
+  }
+
+  &__title {
+    margin-bottom: 9px;
+
+    @include font(18px, 700, 26px);
+    color: $white;
+  }
+
+  &__number {
+    margin-top: 0;
+
+    @include font(14px, 400, 21px);
+  }
+
+  &__number--invert {
+    color: $white;
+  }
+
+  &__subtitle {
+    @include font(14px, 400, 21px);
+    color: $white;
+    padding-bottom: 26px;
+  }
+
+  &__list {
+    @include list-reset;
+    padding: 12px 32px 0 70px;
+    margin-bottom: 40px;
+  }
+
+  &__list--center {
+    padding: 0 20px 0 20px;
+    background-color: $light-grey;
+  }
+
+  &__list--indents {
+    margin-bottom: 5px;
+  }
+
+  &__caption {
+    margin-bottom: 10px;
+
+    @include font(18px, 700, 26px);
+    color: $black;
+  }
+
+  &__recommend {
+    margin-top: 16px;
+    margin-bottom: 0;
+
+    @include font(14px, 400, 21px);
+    color: $grey-black;
+  }
+
+  &__recommend--indents:not(:last-child) {
+    border-bottom: 1px dotted black;
+  }
+
+  &__recommend--indents {
+    padding-top: 2px;
+    padding-bottom: 26px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  &__title,
+  &__number,
+  &__subtitle,
+  &__list--center {
+    text-align: center;
+  }
+}

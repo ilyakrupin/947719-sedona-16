@@ -1,1 +1,29 @@
-/* hotel.scss */
+.hotel {
+  background-color: #ffffff;
+
+  &__header {
+    @include font(21px, 700, 26px);
+    color: $black;
+  }
+
+  &__comment {
+    @include font(14px, 400, 24px);
+    color: $grey-black;
+  }
+
+  &__header,
+  &__comment {
+    padding-left: 29px;
+    padding-right: 29px;
+    text-align: center;
+  }
+
+  &__button {
+    width: 280px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    margin: 35px auto 49px auto;
+
+    @include font(21px, 700, 26px);
+  }
+}

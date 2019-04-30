@@ -1,1 +1,17 @@
-/* normalize.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  @include font(14px, 400, 21px);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

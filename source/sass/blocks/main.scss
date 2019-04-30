@@ -1,0 +1,9 @@
+/* main.scss */
+.main {
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile;
+  }
+}
