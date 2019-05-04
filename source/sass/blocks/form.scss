@@ -1,0 +1,15 @@
+.form {
+  &::after {
+    display: none;
+  }
+
+  &__advantages {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 24px;
+  }
+
+  &__temporary {
+    min-height: 1670px;
+  }
+}

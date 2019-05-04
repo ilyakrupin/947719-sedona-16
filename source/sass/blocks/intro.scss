@@ -10,6 +10,15 @@
     background-size: 320px, 282px, auto;
   }
 
+  &__image--form {
+    min-height: 158px;
+    width: 320px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom, 50% 43%;
+    background-repeat: no-repeat;
+    background-size: 320px, 229px, auto;
+  }
+
   &__slogan {
     margin-top: 39px;
     margin-bottom: 27px;
@@ -30,6 +39,11 @@
     padding-left: 31px;
     padding-right: 34px;
     text-align: center;
+  }
+
+  &__slogan--indents {
+    margin-top: 36px;
+    margin-bottom: 27px;
   }
 
   &::after {

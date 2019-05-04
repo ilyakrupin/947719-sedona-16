@@ -12,24 +12,23 @@
     width: 48px;
     height: 42px;
     padding-top: 6px;
-  }
 
-  &__link,
-  &__link:link,
-  &__link:visited {
-    @include font(18px, 700, 40px);
-    background-color: $light-grey-blue;
-    fill: $white;
-  }
+    &:link,
+    &:visited {
+      @include font(18px, 700, 40px);
+      background-color: $light-grey-blue;
+      fill: $white;
+    }
 
-  &__link:hover,
-  &__link:focus {
-    background-color: $grey-blue;
-    fill: $white;
-  }
+    &:hover,
+    &:focus {
+      background-color: $grey-blue;
+      fill: $white;
+    }
 
-  &__link:active {
-    background-color: $dusty-blue;
-    fill: rgba(255, 255, 255, 0.3);
+    &:active {
+      background-color: $dusty-blue;
+      fill: rgba(255, 255, 255, 0.3);
+    }
   }
 }

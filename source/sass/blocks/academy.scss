@@ -1,31 +1,38 @@
 /* academy.scss */
 .academy {
-  position: relative;
-  display: block;
-
-  @include font(14px, 400, 26px);
-  color: $black;
-  text-align: center;
-
-  &__:link,
-  &__:visited {
-    color: $black;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: -8px;
-    right: 41px;
-    width: 50px;
-    height: 43px;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-  }
-
-  &--indents {
-    margin-top: 44px;
+  &__indents {
+    margin-top: 31px;
     margin-bottom: 23px;
-    margin-right: 40px;
+  }
+
+  &__link {
+    @include font(14px, 400, 26px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:link,
+    &:visited {
+      color: $black;
+    }
+  }
+
+  &__logo {
+    display: block;
+    fill: $black;
+
+    &:link,
+    &:visited {
+      fill: $black;
+    }
+
+    &:hover,
+    &:focus {
+      fill: $light-grey-blue;
+    }
+
+    &:active {
+      fill: rgba(0, 0, 0, 0.3);
+    }
   }
 }

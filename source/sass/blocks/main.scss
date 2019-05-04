@@ -6,4 +6,8 @@
 
     @include mobile;
   }
+
+  &--temporary {
+    min-height: 200px;
+  }
 }

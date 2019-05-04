@@ -1,3 +1,8 @@
 .map {
-  @include mobile;
+  &__image {
+    margin: 0 auto;
+    max-height: 350px;
+    min-width: 320px;
+    width: 100%;
+  }
 }
