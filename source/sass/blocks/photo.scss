@@ -7,9 +7,16 @@
 }
 
 .photo__advantages {
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 270px;
   line-height: 24px;
+}
+
+.photo__wrapper {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .photo__list {
@@ -21,26 +28,25 @@
 
 .photo__item {
   position: relative;
-  margin: 23px auto 17px auto;
+  margin-top: 23px;
+  margin-bottom: 17px;
 
   &::before {
     position: absolute;
-    left: -20px;
-    top: -24px;
     content: "";
-    height: 1px;
-    background-color: $very-light-grey;
+    left: 0;
+    top: -24px;
+    width: 100%;
+    border-bottom: 2px solid $very-light-grey;
   }
 
   &:last-child::after {
     position: absolute;
-    margin-bottom: 7px;
-    left: -20px;
-    bottom: -24px;
     content: "";
-    height: 1px;
-    width: 320px;
-    background-color: $very-light-grey;
+    width: 100%;
+    margin-bottom: 7px;
+    bottom: -24px;
+    border-bottom: 2px solid $very-light-grey;
   }
 }
 
@@ -63,6 +69,7 @@
 .photo__button {
   padding: 0;
   border: none;
+  background: none;
   cursor: pointer;
 }
 
