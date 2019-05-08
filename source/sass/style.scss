@@ -1,7 +1,9 @@
 /* style.scss */
 @import "variables";
 @import "mixins";
-@import "normalize";
+@import "global";
+@import "pixelperfect";
+@import "fonts";
 @import "blocks/header";
 @import "blocks/header-nav";
 @import "blocks/intro";

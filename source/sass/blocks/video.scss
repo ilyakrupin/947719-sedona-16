@@ -1,15 +1,15 @@
 .video {
   position: relative;
+}
 
-  &__controls {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: -60px;
-    left: 0;
-    right: 0;
-    height: 66px;
-    width: 280px;
-    background-color: $grey;
-  }
+.video__controls {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  height: 66px;
+  width: 280px;
+  background-color: $grey;
 }

@@ -1,50 +1,10 @@
 .intro {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 56px;
-
-  &__image {
-    min-height: 389px;
-    width: 320px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: bottom, center;
-    background-repeat: no-repeat;
-    background-size: 320px, 282px, auto;
-  }
-
-  &__image--form {
-    min-height: 158px;
-    width: 320px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: bottom, 50% 43%;
-    background-repeat: no-repeat;
-    background-size: 320px, 229px, auto;
-  }
-
-  &__slogan {
-    margin-top: 39px;
-    margin-bottom: 27px;
-
-    @include font(18px, 700, 26px);
-    color: $black;
-  }
-
-  &__advantages {
-    margin-bottom: 5px;
-
-    @include font(14px, 400, 26px);
-    color: $grey-black;
-  }
-
-  &__slogan,
-  &__advantages {
-    padding-left: 31px;
-    padding-right: 34px;
-    text-align: center;
-  }
-
-  &__slogan--indents {
-    margin-top: 36px;
-    margin-bottom: 27px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 
   &::after {
     z-index: 100;
@@ -52,8 +12,51 @@
     content: "";
     width: 320px;
     height: 37px;
-    background-image: url("../img/bg-intro-triangle-mobile-invert.png");
+    background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+.intro__image {
+  min-height: 389px;
+  width: 320px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom, center;
+  background-repeat: no-repeat;
+  background-size: 320px, 282px, auto;
+
+  &--form {
+    min-height: 158px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
+    background-position: bottom, 50% 43%;
+    background-size: 320px, 229px, auto;
+  }
+}
+
+.intro__slogan {
+  margin-top: 39px;
+  margin-bottom: 27px;
+
+  @include font(18px, 700, 26px);
+  color: $black;
+
+  &--indents {
+    margin-top: 36px;
+    margin-bottom: 27px;
+  }
+}
+
+.intro__advantages {
+  margin-bottom: 5px;
+
+  @include font(14px, 400, 26px);
+  color: $grey-black;
+}
+
+.intro__slogan,
+.intro__advantages {
+  padding-left: 31px;
+  padding-right: 34px;
+  text-align: center;
 }

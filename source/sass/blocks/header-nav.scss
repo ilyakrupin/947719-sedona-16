@@ -1,43 +1,39 @@
 .header-nav {
-  &__list {
-    @include list-reset;
-  }
+  background-color: $light-grey-blue;
+}
 
-  &__item {
-    @include font(18px, 700, 40px);
-    text-align: center;
-    background-color: $light-grey-blue;
-    box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 -2px 0 0 rgba(0, 0, 0, 0.2);
-  }
+.header-nav__list {
+  @include list-reset;
+  margin: 0 auto;
+}
 
-  &__link {
-    display: block;
-    padding-top: 7px;
-    padding-bottom: 9px;
-    cursor: pointer;
-  }
+.header-nav__item {
+  @include font(18px, 700, 40px);
+  text-align: center;
+  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2), 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+}
 
-  &__link,
-  &__link:link,
-  &__link:visited {
-    color: $white;
-    background-color: $light-grey-blue;
-  }
+.header-nav__link {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 9px;
+  cursor: pointer;
+}
 
-  &__item:hover,
-  &__item:focus,
-  &__link:hover,
-  &__link:focus {
-    background-color: $grey-blue;
-  }
+.header-nav__link,
+.header-nav__link:link,
+.header-nav__link:visited {
+  color: $white;
+}
 
-  &__item:hover &__link {
-    background-color: $grey-blue;
-  }
+.header-nav__item:hover,
+.header-nav__item:focus,
+.header-nav__link:hover,
+.header-nav__link:focus {
+  background-color: $grey-blue;
+}
 
-  &__item:active,
-  &__item:active &__link {
-    background-color: $dusty-blue;
-    color: rgba(255, 255, 255, 0.3);
-  }
+.header-nav__link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $dusty-blue;
 }

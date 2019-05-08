@@ -1,38 +1,37 @@
 /* academy.scss */
 .academy {
-  &__indents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include font(14px, 400, 26px);
+
+  &:link,
+  &:visited {
+    color: $black;
+  }
+
+  &--indents {
     margin-top: 31px;
     margin-bottom: 23px;
   }
+}
 
-  &__link {
-    @include font(14px, 400, 26px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.academy__logo {
+  display: block;
+  fill: $black;
 
-    &:link,
-    &:visited {
-      color: $black;
-    }
+  &:link,
+  &:visited {
+    fill: $black;
   }
 
-  &__logo {
-    display: block;
-    fill: $black;
+  &:hover,
+  &:focus {
+    fill: $light-grey-blue;
+  }
 
-    &:link,
-    &:visited {
-      fill: $black;
-    }
-
-    &:hover,
-    &:focus {
-      fill: $light-grey-blue;
-    }
-
-    &:active {
-      fill: rgba(0, 0, 0, 0.3);
-    }
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
   }
 }

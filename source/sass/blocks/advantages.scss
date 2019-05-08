@@ -1,104 +1,49 @@
 .advantages {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
 
-  &__wrapper {
-    padding-top: 20px;
-    padding-left: 27px;
-    padding-right: 27px;
-    background-color: $light-grey-blue;
-  }
+.advantages__wrapper {
+  padding-top: 20px;
+  background-color: $light-grey-blue;
 
-  &__wrapper--indent {
+  &--indent {
     padding-top: 60px;
   }
+}
 
-  &__list {
-    @include list-reset;
-    padding: 12px 32px 0 70px;
-    margin-bottom: 40px;
-  }
+.advantages__list {
+  @include list-reset;
+  padding: 12px 32px 0 70px;
+  margin-bottom: 40px;
 
-  &__item {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 39px;
-      height: 39px;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-
-    &--house::before {
-      top: -11px;
-      left: -49px;
-      background-image: url("../img/icon-house.svg");
-    }
-
-    &--gift::before {
-      top: -11px;
-      left: -46px;
-      background-image: url("../img/icon-gift.svg");
-      background-size: 85%;
-    }
-
-    &--burger::before {
-      top: -2px;
-      left: -51px;
-      background-image: url("../img/icon-burger.svg");
-    }
-  }
-
-  &__title {
-    margin-bottom: 9px;
-
-    @include font(18px, 700, 26px);
-    color: $white;
-  }
-
-  &__number {
-    margin-top: 0;
-
-    @include font(14px, 400, 21px);
-  }
-
-  &__number--invert {
-    color: $white;
-  }
-
-  &__subtitle {
-    @include font(14px, 400, 21px);
-    color: $white;
-    padding-bottom: 26px;
-  }
-
-  &__list--center {
+  &--center {
     padding: 0 20px 0 20px;
     background-color: $light-grey;
   }
 
-  &__list--indents {
+  &--indents {
     margin-bottom: 5px;
   }
+}
 
-  &__caption {
-    margin-bottom: 10px;
+.advantages__item {
+  position: relative;
 
-    @include font(18px, 700, 26px);
-    color: $black;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 39px;
+    height: 39px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-  &__recommend {
-    margin-top: 16px;
-    margin-bottom: 0;
-
-    @include font(14px, 400, 21px);
-    color: $grey-black;
-  }
-
-  &__recommend--indents {
+  &--indents {
     padding: 2px 14px 26px 14px;
 
     &:not(:last-child) {
@@ -107,10 +52,66 @@
     }
   }
 
-  &__title,
-  &__number,
-  &__subtitle,
-  &__list--center {
-    text-align: center;
+  &--house::before {
+    top: -11px;
+    left: -49px;
+    background-image: url("../img/icon-house.svg");
   }
+
+  &--gift::before {
+    top: -11px;
+    left: -46px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--burger::before {
+    top: -2px;
+    left: -51px;
+    background-image: url("../img/icon-burger.svg");
+  }
+}
+
+.advantages__title {
+  margin-bottom: 9px;
+
+  @include font(18px, 700, 26px);
+  color: $white;
+}
+
+.advantages__number {
+  margin-top: 0;
+
+  @include font(14px, 400, 21px);
+
+  &--invert {
+    color: $white;
+  }
+}
+
+.advantages__subtitle {
+  @include font(14px, 400, 21px);
+  color: $white;
+  padding-bottom: 26px;
+}
+
+.advantages__caption {
+  margin-bottom: 10px;
+
+  @include font(18px, 700, 26px);
+  color: $black;
+}
+
+.advantages__recommend {
+  margin-top: 16px;
+  margin-bottom: 0;
+
+  @include font(14px, 400, 21px);
+  color: $grey-black;
+}
+
+.advantages__title,
+.advantages__number,
+.advantages__subtitle,
+.advantages__list--center {
+  text-align: center;
 }
