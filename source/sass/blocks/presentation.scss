@@ -1,0 +1,22 @@
+.presentation {
+  width: 320px;
+  margin: 0 auto 99px auto;
+}
+
+.presentation__header {
+  margin-top: 11px;
+  margin-bottom: 26px;
+
+  @include font(18px, 700, 26px);
+  text-align: center;
+}
+
+.presentation__comment {
+  margin-bottom: 35px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  @include font(14px, 400, 24px);
+  text-align: center;
+  color: $grey-black;
+}

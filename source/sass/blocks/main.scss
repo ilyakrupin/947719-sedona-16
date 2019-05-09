@@ -1,0 +1,13 @@
+/* main.scss */
+.main {
+  /*временно для страницы с формой*/
+  &--temporary {
+    min-height: 200px;
+  }
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}

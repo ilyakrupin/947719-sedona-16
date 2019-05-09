@@ -1,0 +1,85 @@
+.photo {
+  margin-bottom: 23px;
+
+  &::after {
+    display: none;
+  }
+}
+
+.photo__advantages {
+  width: 270px;
+  line-height: 24px;
+}
+
+.photo__wrapper {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__item {
+  position: relative;
+  margin-top: 23px;
+  margin-bottom: 17px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -24px;
+    width: 100%;
+    border-bottom: 2px solid $very-light-grey;
+  }
+
+  &:last-child::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    margin-bottom: 7px;
+    bottom: -24px;
+    border-bottom: 2px solid $very-light-grey;
+  }
+}
+
+.photo__caption {
+  margin-bottom: 0;
+
+  @include font(14px, 700, 24px);
+}
+
+.photo__author {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+  color: $grey-black;
+}
+
+.photo__button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.photo__image-like {
+  display: inline;
+  margin-right: 10px;
+}
+
+.photo__counter {
+  margin-bottom: 0;
+
+  @include font(14px, 700, 24px);
+}

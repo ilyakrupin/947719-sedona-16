@@ -1,0 +1,37 @@
+/* academy.scss */
+.academy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include font(14px, 400, 26px);
+
+  &:link,
+  &:visited {
+    color: $black;
+  }
+
+  &--indents {
+    margin-top: 31px;
+    margin-bottom: 23px;
+  }
+}
+
+.academy__logo {
+  display: block;
+  fill: $black;
+
+  &:link,
+  &:visited {
+    fill: $black;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $light-grey-blue;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
