@@ -7,7 +7,7 @@
 }
 
 .photo__advantages {
-  width: 270px;
+  width: 271px;
   line-height: 24px;
 }
 
@@ -37,7 +37,7 @@
     left: 0;
     top: -24px;
     width: 100%;
-    border-bottom: 2px solid $very-light-grey;
+    border-bottom: 1px solid $very-light-grey;
   }
 
   &:last-child::after {
@@ -46,7 +46,7 @@
     width: 100%;
     margin-bottom: 7px;
     bottom: -24px;
-    border-bottom: 2px solid $very-light-grey;
+    border-bottom: 1px solid $very-light-grey;
   }
 }
 
