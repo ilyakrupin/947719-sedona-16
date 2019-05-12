@@ -20,15 +20,82 @@
   <a href="index.html"><img class="header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип City of Sedona"></a>
 </header>
 <main class="main">
-  <div class="main__container">
-    <section class="intro form">
-      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <div class="intro__image intro__image--form"></div>
-      <p class="intro__slogan intro__slogan--indents">Оставьте свой отзыв</p>
-      <p class="intro__advantages form__advantages">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </section>
-  </div>
-  <section class="form__temporary"></section>
+  <section class="intro form">
+    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <div class="intro__image intro__image--form"></div>
+    <p class="intro__slogan intro__slogan--indents">Оставьте свой отзыв</p>
+    <p class="intro__advantages form__advantages">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  </section>
+  <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="tourist">
+      <legend class="tourist__caption">Представьтесь:</legend>
+      <label class="tourist__name">Имя*:
+        <input class="tourist__input" type="text" name="name" placeholder="Петр">
+      </label>
+      <label class="tourist__surname">Фамилия*:
+        <input class="tourist__input" type="text" name="surname" placeholder="Иванов">
+      </label>
+      <label class="tourist__patronymic">Отчество:
+        <input class="tourist__input" type="text" name="patronymic" placeholder="Александрович">
+      </label>
+    </fieldset>
+    <fieldset class="contact">
+      <legend class="contact__caption">Контактная информация:</legend>
+      <label class="contact__phone">Контактный телефон*:
+        <input class="contact__input" type="text" name="phone" placeholder="Введите телефон"></label>
+      <label class="contact__email">Электронная почта*:
+        <input class="contact__input" type="email" name="email" placeholder="Введите e-mail"></label>
+    </fieldset>
+    <fieldset class="impression">
+      <legend class="impression__caption">Ваше общее впечатление:</legend>
+      <ul class="impression__list">
+        <li class="impression__item">
+          <label class="impression__title">
+            <input class="visually-hidden impression__input" name="impression" value="positive"
+              type="radio" checked>Скорее положительное
+          </label></li>
+        <li class="impression__item">
+          <label class="impression__title">
+            <input class="visually-hidden impression__input" name="impression" value="negative"
+              type="radio">Скорее отрицательное
+          </label></li>
+        <li class="impression__item">
+          <label class="impression__title">
+            <input class="visually-hidden impression__input" name="impression" value="do-not-know"
+              type="radio">Затрудняюсь ответить
+          </label></li>
+      </ul>
+    </fieldset>
+    <fieldset class="attractions">
+      <legend class="attractions__caption">Посещенные достопримечательности:</legend>
+      <ul class="attractions__list">
+        <li class="attractions__item">
+          <label class="attractions__title">
+            <input class="visually-hidden attractions__input" name="attractions" value="devils-bridge"
+              type="checkbox" checked>Мост Дьявола
+          </label></li>
+        <li class="attractions__item">
+          <label class="attractions__title">
+            <input class="visually-hidden attractions__input" name="attractions" value="mountain-bell"
+              type="checkbox" checked>Гора-Колокол
+          </label></li>
+        <li class="attractions__item">
+          <label class="attractions__title">
+            <input class="visually-hidden attractions__input" name="attractions" value="slide-park"
+              type="checkbox" checked>Слайд-парк
+          </label></li>
+        <li class="attractions__item">
+          <label class="attractions__title">
+            <input class="visually-hidden attractions__input" name="attractions" value="red-rocks"
+              type="checkbox">Красные скалы
+          </label></li>
+      </ul>
+    </fieldset>
+    <label class="emotions">Опишите свои эмоции:
+      <textarea class="emotions__text" name="emotions-text" placeholder="Опишите подробно все свои восторги" rows="5"></textarea>
+    </label>
+    <button type="submit" class="button feedback__button">Отправить отзыв</button>
+  </form>
 </main>
 <footer class="footer">
   <h2 class="visually-hidden">Социальные сети</h2>
