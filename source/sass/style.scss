@@ -1,9 +1,10 @@
 /* style.scss */
+@import "blocks/visually-hidden";
 @import "normalize";
 @import "variables";
 @import "mixins";
 @import "global";
-@import "pixelperfect";
+/*@import "pixelperfect";*/
 @import "fonts";
 @import "blocks/header";
 @import "blocks/header-nav";
@@ -14,16 +15,10 @@
 @import "blocks/button";
 @import "blocks/form";
 @import "blocks/feedback";
-@import "blocks/tourist";
-@import "blocks/contact";
-@import "blocks/attractions";
-@import "blocks/impression";
-@import "blocks/emotions";
 @import "blocks/photo";
 @import "blocks/hotel";
 @import "blocks/map";
 @import "blocks/presentation";
 @import "blocks/video";
-@import "blocks/visually-hidden";
 @import "blocks/footer";
 @import "blocks/social";

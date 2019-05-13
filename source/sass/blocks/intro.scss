@@ -26,7 +26,7 @@
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom, 50% 51%;
   background-repeat: no-repeat;
-  background-size: contain, 282px, cover;
+  background-size: contain, 282px, auto;
 
   &--form {
     min-height: 158px;

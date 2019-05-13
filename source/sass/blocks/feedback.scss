@@ -1,5 +1,259 @@
-.feedback__button {
+.feedback {
+  margin-top: 31px;
+  margin-bottom: 39px;
+}
+
+.feedback__group {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -19px;
+    width: 100%;
+    border-bottom: 1px solid $very-light-grey;
+  }
+
+  &:last-of-type::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid $very-light-grey;
+  }
+
+  &--contact {
+    margin-bottom: 14px;
+  }
+
+  &--impression {
+    margin-bottom: 11px;
+  }
+
+  &--attractions {
+    margin-bottom: 0;
+  }
+}
+
+.feedback__caption {
+  margin-bottom: 18px;
+
+  @include font(18px, 700, 26px);
+  margin-left: auto;
+  margin-right: auto;
+
+  &--contact {
+    margin-bottom: 15px;
+  }
+
+  &--attractions {
+    width: 280px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  &--emotions {
+    width: 280px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.feedback__wrapper {
+  overflow: hidden;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 13px;
+
+  &--emotions {
+    margin-top: 18px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+.feedback__object {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+  @include font(14px, 400, 26px);
+  color: $grey-black;
+
+  &--contact {
+    display: block;
+    padding-left: 0;
+    margin-bottom: 12px;
+  }
+
+  &::after {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-color: $middle-light-grey;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--phone {
+    &::after {
+      content: "";
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
+
+  &--email {
+    &::after {
+      content: "";
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+}
+
+.feedback__input {
+  min-height: 26px;
+  width: 100%;
+  padding: 14px 20px 14px 20px;
+  margin-left: 15px;
+
+  @include font(18px, 700, 26px);
+  background-color: $grey;
+  border: none;
+
+  &[type="text"],
+  &[type="email"] {
+    outline: none;
+    border: none;
+  }
+
+  &::placeholder {
+    color: $black;
+  }
+
+  &--text {
+    min-height: 130px;
+    width: 240px;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &--patronymic {
+    padding-left: 24px;
+  }
+
+  &--contact {
+    width: 178px;
+    padding: 16px 23px 16px 22px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  &--impression:checked + label::before {
+    background: radial-gradient(ellipse at center, $grey-black 0%, $grey-black 90%, $white 100%);
+  }
+
+  &--attractions:checked + label::before {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.feedback__label {
+  display: inline-flex;
+  margin-left: 22px;
+  margin-bottom: 7px;
+  cursor: pointer;
+
+  &--impression {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 19px;
+      height: 19px;
+      padding: 0;
+      top: 1px;
+      left: 1px;
+      border: 19px solid $light;
+      border-radius: 50%;
+      background: $light;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      border: 19px solid $very-light-grey;
+      background: radial-gradient(ellipse at center, $grey-black 0%, $grey-black 90%, $white 100%);
+    }
+
+    &:active::before {
+      border: 19px solid $very-dark-grey;
+      background: $grey-black--opacity;
+    }
+  }
+
+  &--attractions {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 52px;
+      height: 52px;
+      padding: 0;
+      top: 1px;
+      left: 1px;
+      border-radius: 10%;
+      background: $light;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background: $very-light-grey;
+    }
+
+    &:active::before {
+      background: $grey-black;
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      opacity: 0.3;
+    }
+  }
+}
+
+.feedback__button {
+  width: 280px;
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @include font(21px, 700, 26px);
+  text-transform: uppercase;
+  color: $white;
+}
+
+.feedback__list {
+  @include list-reset;
+}
+
+.feedback__item {
+  position: relative;
+  padding: 14px 0 22px 56px;
+
+  @include font(18px, 700, 26px);
+  text-transform: none;
+
+  &--attractions {
+    padding: 14px 0 33px 56px;
+
+    &:last-child {
+      padding-bottom: 13px;
+    }
+  }
 }
