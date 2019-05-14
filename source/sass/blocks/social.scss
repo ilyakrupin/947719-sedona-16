@@ -3,11 +3,22 @@
 
   @include list-reset;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 113px;
+  }
 }
 
 .social__item {
   display: inline-block;
   vertical-align: top;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
+  }
 }
 
 .social__link {
@@ -16,6 +27,11 @@
   width: 48px;
   height: 42px;
   padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 46px;
+    height: 41px;
+  }
 
   &:link,
   &:visited {

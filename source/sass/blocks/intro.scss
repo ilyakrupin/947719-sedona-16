@@ -3,6 +3,12 @@
   min-width: 320px;
   margin-top: 56px;
 
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    margin-top: 6px;
+  }
+
+
   &::after {
     z-index: 100;
     position: absolute;
@@ -17,16 +23,45 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .intro__image {
+  position: relative;
   min-width: 320px;
   min-height: 388px;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom, 50% 51%;
   background-repeat: no-repeat;
   background-size: contain, 282px, auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    min-height: 519px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: bottom, 50% 46%, 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto, 460px, cover;
+
+    &--tablet::after {
+      position: absolute;
+      content: "";
+      min-height: 100px;
+      left: 0;
+      right: 0;
+      bottom: -25px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+    }
+  }
 
   &--form {
     min-height: 158px;
@@ -37,14 +72,20 @@
 }
 
 .intro__slogan {
-  width: 260px;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 255px;
   margin: 40px auto 27px auto;
 
   @include font(18px, 700, 26px);
   text-align: center;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: 490px;
+    margin-top: 50px;
+    margin-bottom: 28px;
+
+    @include font(21px, 700, 26px);
+  }
 
   &--indents {
     margin-top: 36px;
@@ -54,13 +95,15 @@
 
 .intro__advantages {
   margin-bottom: 5px;
-  width: 280px;
+  width: 255px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @include font(14px, 400, 26px);
   text-align: center;
   color: $grey-black;
+
+  @media (min-width: $tablet-width) {
+    width: 492px;
+  }
 }

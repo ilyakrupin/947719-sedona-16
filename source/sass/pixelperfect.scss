@@ -1,9 +1,11 @@
 .bg-index {
-  background-size: 320px;
-  background-image: url("../img/media/sedona-index-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  opacity: 0.5;
+  @media (max-width: 767px) {
+    background-size: 320px;
+    background-image: url("../img/media/sedona-index-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     background-size: 768px;
@@ -23,11 +25,13 @@
 }
 
 .bg-photo {
-  background-size: 320px;
-  background-image: url("../img/media/sedona-photo-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  opacity: 0.5;
+  @media (max-width: 767px) {
+    background-size: 320px;
+    background-image: url("../img/media/sedona-photo-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     background-size: 768px;
@@ -47,11 +51,13 @@
 }
 
 .bg-form {
-  background-size: 320px;
-  background-image: url("../img/media/sedona-form-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  opacity: 0.5;
+  @media (max-width: 767px) {
+    background-size: 320px;
+    background-image: url("../img/media/sedona-form-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     background-size: 768px;
