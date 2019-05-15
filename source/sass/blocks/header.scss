@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     min-width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
 }
 
 .header__logo-image {
@@ -16,6 +20,11 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    top: 0;
+  }
+
+
+  @media (min-width: $desktop-width) {
     top: 0;
   }
 }
@@ -37,6 +46,12 @@
     justify-content: space-between;
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1113px;
+  }
 }
 
 .header__nav-item {
@@ -54,6 +69,16 @@
 
     &:nth-child(3) {
       padding-left: 79px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(2) {
+      padding-right: 124px;
+    }
+
+    &:nth-child(3) {
+      padding-left: 121px;
     }
   }
 }

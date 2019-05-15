@@ -9,9 +9,13 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin-top: 26px;
+    margin-top: 29px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
   }
 }
 
@@ -58,5 +62,10 @@
     margin-right: auto;
     padding-top: 16px;
     padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 48px;
+    margin-bottom: 67px;
   }
 }

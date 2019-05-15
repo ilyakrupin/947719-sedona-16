@@ -7,7 +7,7 @@
     opacity: 0.5;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-size: 768px;
     background-image: url("../img/media/sedona-index-tablet.jpg");
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
     opacity: 0.5;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-size: 768px;
     background-image: url("../img/media/sedona-photo-tablet.jpg");
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@
     opacity: 0.5;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-size: 768px;
     background-image: url("../img/media/sedona-form-tablet.jpg");
     background-repeat: no-repeat;
