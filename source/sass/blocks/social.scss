@@ -3,24 +3,31 @@
   flex-direction: row;
 
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .social__item {
   &:not(:last-child) {
     margin-right: 6px;
-  }
 
-  &--media {
     @media (min-width: $tablet-width) {
-      &:last-child {
-        margin-right: 10px;
-      }
+      margin-right: 8px;
     }
   }
 
-  @media (min-width: $desktop-width) {
+  &--media {
     &:last-child {
-      margin-right: 10px;
+      @media (min-width: $tablet-width) {
+        margin-right: 9px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-right: 10px;
+      }
     }
   }
 }
@@ -31,6 +38,11 @@
   width: 46px;
   height: 43px;
   padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 45px;
+    height: 40px;
+  }
 
   &:link,
   &:visited {
