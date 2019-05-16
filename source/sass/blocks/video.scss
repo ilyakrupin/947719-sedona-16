@@ -1,6 +1,9 @@
 .video {
   position: relative;
 
+  margin-left: auto;
+  margin-right: auto;
+
   @media (min-width: $tablet-width) {
     /* ! temporary ! */
     width: 648px;
@@ -8,6 +11,12 @@
     margin-top: 73px;
     outline: 2px solid #6a6461;
     background: #8e836a;
+  }
+
+  @media (min-width: $desktop-width) {
+    /* ! temporary ! */
+    width: 800px;
+    height: 496px;
   }
 }
 

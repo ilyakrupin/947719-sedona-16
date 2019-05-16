@@ -12,20 +12,6 @@
   }
 }
 
-.photo__wrapper {
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: $tablet-width) {
-    width: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .photo__list {
   @include list-reset;
 
@@ -38,6 +24,50 @@
     width: 648px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.photo__wrapper {
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.photo__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    background: $grey;
+
+    &--color {
+      background: $light-dark-grey;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: none;
   }
 }
 
@@ -83,6 +113,63 @@
       display: none;
     }
   }
+
+  /* ! temporary resized images ! */
+  &:first-child {
+    .photo__image {
+      @media (min-width: $tablet-width) {
+        min-width: 648px;
+        height: 400px;
+      }
+
+      @media (min-width: $desktop-width) {
+        min-width: 1200px;
+        height: 400px;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .photo__image {
+      @media (min-width: $tablet-width) {
+        min-width: 324px;
+        height: 267px;
+      }
+
+      @media (min-width: $desktop-width) {
+        min-width: 400px;
+        height: 267px;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    .photo__image {
+      @media (min-width: $tablet-width) {
+        min-width: 324px;
+        height: 267px;
+      }
+
+      @media (min-width: $desktop-width) {
+        min-width: 400px;
+        height: 267px;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    .photo__image {
+      @media (min-width: $tablet-width) {
+        min-width: 324px;
+        height: 267px;
+      }
+
+      @media (min-width: $desktop-width) {
+        min-width: 400px;
+        height: 267px;
+      }
+    }
+  }
 }
 
 .photo__caption {
@@ -93,6 +180,10 @@
   &--inner {
     @media (min-width: $tablet-width) {
       margin-left: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      color: $white;
     }
   }
 }
@@ -110,15 +201,10 @@
     @media (min-width: $tablet-width) {
       margin-left: 20px;
     }
-  }
-}
 
-.photo__container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 12px;
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
   }
 }
 
@@ -129,8 +215,19 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    margin-top: 12px;
-    margin-right: 21px;
+    margin-top: 11px;
+    margin-right: 29px;
+  }
+
+  &--indents {
+    @media (min-width: $tablet-width) {
+      margin-top: 11px;
+      margin-right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 22px;
+    }
   }
 }
 
@@ -138,8 +235,14 @@
   display: inline;
   margin-bottom: 0;
 
-  @media (min-width: $tablet-width) {
-    margin-right: 5px;
+  &--indents {
+    @media (min-width: $tablet-width) {
+      margin-right: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 5px;
+    }
   }
 }
 
@@ -150,39 +253,17 @@
   @include font(14px, 700, 24px);
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin-left: 9px;
   }
-}
 
-/* ! temporary ! */
-@media (min-width: $tablet-width) {
-  .photo__item {
-    &:first-child {
-      .photo__image {
-        min-width: 648px;
-        height: 400px;
-      }
+  &--indents {
+    @media (min-width: $tablet-width) {
+      margin-left: 1px;
     }
+  }
 
-    &:nth-child(2) {
-      .photo__image {
-        min-width: 324px;
-        height: 267px;
-      }
-    }
-
-    &:nth-child(3) {
-      .photo__image {
-        min-width: 324px;
-        height: 267px;
-      }
-    }
-
-    &:nth-child(4) {
-      .photo__image {
-        min-width: 324px;
-        height: 267px;
-      }
-    }
+  @media (min-width: $desktop-width) {
+    color: $white;
+    vertical-align: bottom;
   }
 }

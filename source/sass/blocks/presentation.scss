@@ -11,6 +11,11 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 86px;
+  }
 }
 
 .presentation__header {
@@ -26,6 +31,10 @@
 
     @include font(30px, 700, 26px);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 48px;
+  }
 }
 
 .presentation__comment {
@@ -38,7 +47,7 @@
   color: $grey-black;
 
   @media (min-width: $tablet-width) {
-    width: 415px;
+    width: 420px;
     margin-left: auto;
     margin-right: auto;
   }
