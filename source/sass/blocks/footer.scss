@@ -10,6 +10,13 @@
     padding-top: 35px;
     padding-bottom: 36px;
   }
+/*
+  &--inner {
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-bottom: 36px;
+    }
+  }*/
 }
 
 .footer__wrapper {
