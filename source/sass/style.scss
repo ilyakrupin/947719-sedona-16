@@ -3,7 +3,7 @@
 @import "variables";
 @import "mixins";
 @import "global";
-/*@import "pixelperfect";*/
+@import "pixelperfect";
 @import "fonts";
 @import "blocks/header";
 @import "blocks/intro";
@@ -11,7 +11,6 @@
 @import "blocks/academy";
 @import "blocks/advantages";
 @import "blocks/button";
-@import "blocks/form";
 @import "blocks/feedback";
 @import "blocks/photo";
 @import "blocks/hotel";
