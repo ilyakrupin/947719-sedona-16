@@ -124,8 +124,6 @@
 }
 
 .header__nav-link--active {
-  background-color: $very-light-grey;
-
   @media (min-width: $tablet-width) {
     background-color: $white;
     color: $grey-brown;
