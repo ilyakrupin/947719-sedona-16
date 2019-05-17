@@ -6,16 +6,37 @@
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-top: 29px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+  }
 }
 
 .hotel__header {
   @include font(21px, 700, 26px);
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    @include font(30px, 700, 26px);
+  }
 }
 
 .hotel__comment {
   @include font(14px, 400, 24px);
   color: $grey-black;
+}
+
+.hotel__wrap {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .hotel__header,
@@ -32,4 +53,19 @@
   margin-bottom: 50px;
 
   @include font(21px, 700, 26px);
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin-top: 43px;
+    margin-bottom: 59px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 48px;
+    margin-bottom: 67px;
+  }
 }

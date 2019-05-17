@@ -1,6 +1,21 @@
 .presentation {
   width: 320px;
-  margin: 0 auto 99px auto;
+  margin-top: 0;
+  margin-bottom: 104px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin-bottom: 42px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 86px;
+  }
 }
 
 .presentation__header {
@@ -9,6 +24,17 @@
 
   @include font(18px, 700, 26px);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 44px;
+    margin-bottom: 30px;
+
+    @include font(30px, 700, 26px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 48px;
+  }
 }
 
 .presentation__comment {
@@ -19,4 +45,10 @@
   @include font(14px, 400, 24px);
   text-align: center;
   color: $grey-black;
+
+  @media (min-width: $tablet-width) {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

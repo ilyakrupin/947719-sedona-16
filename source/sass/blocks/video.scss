@@ -1,5 +1,29 @@
 .video {
   position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    /* ! temporary ! */
+    width: 648px;
+    height: 499px;
+    margin-top: 73px;
+    background: $very-dark-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    /* ! temporary ! */
+    width: 800px;
+    height: 496px;
+  }
+}
+
+.video__player {
+  @media (min-width: $tablet-width) {
+    /* ! temporary ! */
+    display: none;
+  }
 }
 
 .video__controls {
@@ -12,4 +36,9 @@
   height: 66px;
   width: 280px;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    /* ! temporary ! */
+    display: none;
+  }
 }
