@@ -67,7 +67,7 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -217,6 +217,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 11px;
     margin-right: 29px;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
   }
 
   &--indents {

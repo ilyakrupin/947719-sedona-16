@@ -1,18 +1,11 @@
-/* fonts */
 @mixin font($size: 14px, $weight: 400, $height: 24px) {
   font-size: $size;
   font-weight: $weight;
   line-height: $height;
 }
 
-/* list */
 @mixin list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-@mixin bg {
-  background: rgba(0, 0, 0, 0.5);
-  /*outline: 1px solid rgba(150, 50, 150, 1);*/
 }
