@@ -12,7 +12,7 @@
     <ul class="header__nav-list">
       <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
       <li class="header__nav-item"><a class="header__nav-link" href="photo.html">Фото и видео</a></li>
-      <li class="header__nav-item"><a class="header__nav-link">Форма отзыва</a></li>
+      <li class="header__nav-item"><a class="header__nav-link header__nav-link--active">Форма отзыва</a></li>
       <li class="header__nav-item">
         <a class="header__nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
     </ul>
@@ -29,21 +29,21 @@
   <form action="https://echo.htmlacademy.ru" class="feedback" method="post">
     <fieldset class="feedback__group">
       <legend class="feedback__caption">Представьтесь:</legend>
-      <div class="feedback__wrapper">
+      <div class="feedback__wrapper feedback__wrapper--object">
         <label class="feedback__object">Имя<sup>*</sup>:
-          <input class="feedback__input" name="name" placeholder="Петр" required type="text">
+          <input class="feedback__input feedback__input--object" name="name" placeholder="Петр" required type="text">
         </label>
         <label class="feedback__object">Фамилия<sup>*</sup>:
-          <input class="feedback__input" name="surname" placeholder="Иванов" required type="text">
+          <input class="feedback__input feedback__input--object" name="surname" placeholder="Иванов" required type="text">
         </label>
         <label class="feedback__object">Отчество:
-          <input class="feedback__input feedback__input--patronymic" name="patronymic" placeholder="Александрович" type="text">
+          <input class="feedback__input feedback__input--patronymic feedback__input--object" name="patronymic" placeholder="Александрович" type="text">
         </label>
       </div>
     </fieldset>
     <fieldset class="feedback__group feedback__group--contact">
       <legend class="feedback__caption feedback__caption--contact">Контактная информация:</legend>
-      <div class="feedback__wrapper">
+      <div class="feedback__wrapper feedback__wrapper--contact">
         <label class="feedback__object feedback__object--contact feedback__object--phone">
           <span class="feedback__label">Контактный телефон<sup>*</sup>:</span>
           <input class="feedback__input feedback__input--contact" name="phone" placeholder="Введите телефон" required type="text"></label>
@@ -53,7 +53,7 @@
       </div>
     </fieldset>
     <fieldset class="feedback__group feedback__group--impression">
-      <legend class="feedback__caption">Ваше общее впечатление:</legend>
+      <legend class="feedback__caption feedback__caption--impression">Ваше общее впечатление:</legend>
       <div class="feedback__wrapper">
         <ul class="feedback__list">
           <li class="feedback__item">

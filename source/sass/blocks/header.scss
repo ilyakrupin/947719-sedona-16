@@ -104,9 +104,43 @@
 .header__nav-link:hover,
 .header__nav-link:focus {
   background-color: $grey-blue;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    color: $light-grey-blue;
+  }
 }
 
 .header__nav-link:active {
-  color: rgba(255, 255, 255, 0.3);
   background-color: $dusty-blue;
+  color: rgba(255, 255, 255, 0.3);
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    color: $black--opacity;
+  }
+}
+
+.header__nav-link--active {
+  background-color: $very-light-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    color: $grey-brown;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      background-color: $white;
+      color: $very-grey-brown;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
+      background-color: $white;
+      color: $grey-brown--opacity;
+    }
+  }
 }
