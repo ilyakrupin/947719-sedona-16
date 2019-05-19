@@ -28,30 +28,31 @@
       <p class="intro__advantages intro__advantages--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
     <form action="https://echo.htmlacademy.ru" class="feedback" method="post">
-      <fieldset class="feedback__group">
+      <fieldset class="feedback__group feedback__group--traveller">
         <legend class="feedback__caption">Представьтесь:</legend>
-        <div class="feedback__wrapper feedback__wrapper--object">
-          <label class="feedback__object">Имя<sup>*</sup>:
-            <input class="feedback__input feedback__input--object" name="name" placeholder="Петр" required type="text">
+        <div class="feedback__wrapper feedback__wrapper--traveller">
+          <label class="feedback__block feedback__block--traveller">Имя<sup>*</sup>:
+            <input class="feedback__field feedback__field--traveller" name="name" placeholder="Петр" required size="10" type="text">
           </label>
-          <label class="feedback__object">Фамилия<sup>*</sup>:
-            <input class="feedback__input feedback__input--object" name="surname" placeholder="Иванов" required type="text">
+          <label class="feedback__block feedback__block--traveller">Фамилия<sup>*</sup>:
+            <input class="feedback__field feedback__field--traveller" name="surname" placeholder="Иванов" required size="10" type="text">
           </label>
-          <label class="feedback__object">Отчество:
-            <input class="feedback__input feedback__input--patronymic feedback__input--object" name="patronymic" placeholder="Александрович" type="text">
+          <label class="feedback__block feedback__block--traveller">Отчество:
+            <input class="feedback__field feedback__field--traveller feedback__field--patronymic" name="patronymic" placeholder="Александрович" size="10" type="text">
           </label>
         </div>
       </fieldset>
       <fieldset class="feedback__group feedback__group--contact">
         <legend class="feedback__caption feedback__caption--contact">Контактная информация:</legend>
         <div class="feedback__wrapper feedback__wrapper--contact">
-          <label class="feedback__object feedback__object--contact feedback__object--phone">
-            <span class="feedback__label">Контактный телефон<sup>*</sup>:</span>
-            <input class="feedback__input feedback__input--contact" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required required
-              type="tel"></label>
-          <label class="feedback__object feedback__object--contact feedback__object--email">
-            <span class="feedback__label">Электронная почта<sup>*</sup>:</span>
-            <input class="feedback__input feedback__input--contact" name="email" placeholder="Введите e-mail" required type="email"></label>
+          <label class="feedback__block feedback__block--contact feedback__block--icon-phone">Контактный телефон<sup>*</sup>:</label>
+          <div class="feedback__icon feedback__icon--phone">
+            <input class="feedback__field feedback__field--contact" maxlength="12" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required type="tel">
+          </div>
+          <label class="feedback__block feedback__block--contact feedback__block--icon-email">Электронная почта<sup>*</sup>:</label>
+            <div class="feedback__icon feedback__icon--email">
+              <input class="feedback__field feedback__field--contact" name="email" placeholder="Введите e-mail" required type="email">
+            </div>
         </div>
       </fieldset>
       <fieldset class="feedback__group feedback__group--impression">
@@ -59,16 +60,16 @@
         <div class="feedback__wrapper">
           <ul class="feedback__list">
             <li class="feedback__item">
-              <input checked class="visually-hidden feedback__input feedback__input--impression" id="positive" name="impression" type="radio" value="positive">
-              <label class="feedback__label feedback__label--impression" for="positive">Скорее положительное</label>
+              <input checked class="visually-hidden feedback__field feedback__field--impression" id="positive" name="impression" type="radio" value="positive">
+              <label class="feedback__block feedback__block--impression" for="positive">Скорее положительное</label>
             </li>
             <li class="feedback__item">
-              <input class="visually-hidden feedback__input feedback__input--impression" id="negative" name="impression" type="radio" value="negative">
-              <label class="feedback__label feedback__label--impression" for="negative">Скорее отрицательное</label>
+              <input class="visually-hidden feedback__field feedback__field--impression" id="negative" name="impression" type="radio" value="negative">
+              <label class="feedback__block feedback__block--impression" for="negative">Скорее отрицательное</label>
             </li>
             <li class="feedback__item">
-              <input class="visually-hidden feedback__input feedback__input--impression" id="do-not-know" name="impression" type="radio" value="do-not-know">
-              <label class="feedback__label feedback__label--impression" for="do-not-know">Затрудняюсь ответить</label>
+              <input class="visually-hidden feedback__field feedback__field--impression" id="do-not-know" name="impression" type="radio" value="do-not-know">
+              <label class="feedback__block feedback__block--impression" for="do-not-know">Затрудняюсь ответить</label>
             </li>
           </ul>
         </div>
@@ -78,31 +79,31 @@
         <div class="feedback__wrapper">
           <ul class="feedback__list">
             <li class="feedback__item feedback__item--attractions">
-              <input checked class="visually-hidden feedback__input feedback__input--attractions" id="devils-bridge" name="attractions"
+              <input checked class="visually-hidden feedback__field feedback__field--attractions" id="devils-bridge" name="attractions"
                 type="checkbox" value="devils-bridge">
-              <label class="feedback__label feedback__label--attractions" for="devils-bridge">Мост Дьявола</label>
+              <label class="feedback__block feedback__block--attractions" for="devils-bridge">Мост Дьявола</label>
             </li>
             <li class="feedback__item feedback__item--attractions">
-              <input checked class="visually-hidden feedback__input feedback__input--attractions" id="mountain-bell" name="attractions"
+              <input checked class="visually-hidden feedback__field feedback__field--attractions" id="mountain-bell" name="attractions"
                 type="checkbox" value="mountain-bell">
-              <label class="feedback__label feedback__label--attractions" for="mountain-bell">Гора-Колокол</label>
+              <label class="feedback__block feedback__block--attractions" for="mountain-bell">Гора-Колокол</label>
             </li>
             <li class="feedback__item feedback__item--attractions">
-              <input checked class="visually-hidden feedback__input feedback__input--attractions" id="slide-park" name="attractions"
+              <input checked class="visually-hidden feedback__field feedback__field--attractions" id="slide-park" name="attractions"
                 type="checkbox" value="slide-park">
-              <label class="feedback__label feedback__label--attractions" for="slide-park">Слайд-парк</label>
+              <label class="feedback__block feedback__block--attractions" for="slide-park">Слайд-парк</label>
             </li>
             <li class="feedback__item feedback__item--attractions">
-              <input class="visually-hidden feedback__input feedback__input--attractions" id="red-rocks" name="attractions" type="checkbox"
+              <input class="visually-hidden feedback__field feedback__field--attractions" id="red-rocks" name="attractions" type="checkbox"
                 value="red-rocks">
-              <label class="feedback__label feedback__label--attractions" for="red-rocks">Красные скалы</label>
+              <label class="feedback__block feedback__block--attractions" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
         </div>
       </fieldset>
       <div class="feedback__wrapper feedback__wrapper--emotions">
         <label class="feedback__caption feedback__caption--emotions">Опишите свои эмоции:
-          <textarea class="feedback__input feedback__input--text" name="emotions-text" placeholder="Опишите подробно все свои восторги" rows="5"></textarea>
+          <textarea class="feedback__field feedback__field--text" name="emotions-text" placeholder="Опишите подробно все свои восторги" rows="5"></textarea>
         </label>
       </div>
       <button class="button feedback__button" type="submit">Отправить отзыв</button>

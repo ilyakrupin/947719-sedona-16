@@ -59,6 +59,10 @@
     border-bottom: 1px solid $very-light-grey;
   }
 
+  &--traveller {
+    margin-bottom: 13px;
+  }
+
   &--contact {
     margin-bottom: 26px;
 
@@ -110,7 +114,7 @@
   }
 
   &--contact {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 19px;
@@ -151,17 +155,18 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 323px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+    width: 324px;
+  }
+
+  &--traveller {
   }
 
   &--contact {
     @media (min-width: $tablet-width) {
-      width: auto;
       padding-right: 55px;
     }
   }
@@ -178,124 +183,39 @@
   }
 }
 
-.feedback__object {
-  display: inline-flex;
-  align-items: center;
+.feedback__block {
   margin-bottom: 24px;
 
+  @include font(14px, 400, 26px);
+  color: $grey-black;
 
   @media (min-width: $tablet-width) {
     margin-left: 57px;
     margin-right: 0;
   }
 
-  @include font(14px, 400, 26px);
-  color: $grey-black;
+  &--traveller {
+    display: flex;
+    align-items: center;
+  }
 
   &--contact {
     display: block;
-    padding-left: 0;
-    margin-bottom: 12px;
+    margin-left: 21px;
+    margin-bottom: 7px;
 
     @media (min-width: $tablet-width) {
+      display: block;
       margin-left: 0;
       margin-bottom: 23px;
     }
   }
 
-  &::after {
-    position: absolute;
-    width: 58px;
-    height: 58px;
-    background-color: $middle-light-grey;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    @media (min-width: $tablet-width) {
-      right: 0;
-    }
-  }
-
-  &--phone {
-    &::after {
-      content: "";
-      background-image: url("../img/icon-phone.svg");
-    }
-  }
-
-  &--email {
-    &::after {
-      content: "";
-      background-image: url("../img/icon-mail.svg");
-    }
-  }
-}
-
-.feedback__input {
-  min-height: 26px;
-  width: 100%;
-  padding: 14px 20px 14px 20px;
-  margin-left: 15px;
-
-  @include font(18px, 700, 26px);
-  background-color: $grey;
-  border: none;
-
-
-  &[type="text"],
-  &[type="email"] {
-    outline: none;
-    border: none;
-  }
-
-  &::placeholder {
-    color: $black;
-    opacity: 1;
-  }
-
-  &--text {
-    min-height: 130px;
-    width: 240px;
-    margin-left: 0;
-    margin-top: 20px;
-    margin-bottom: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  &--patronymic {
-    padding-left: 24px;
-  }
-
-  &--contact {
-    width: 178px;
-    padding: 16px 23px 16px 22px;
-    margin-bottom: 0;
-    margin-left: 0;
-
-    @media (min-width: $tablet-width) {
-      width: 92%;
-    }
-  }
-
-  &--impression:checked + label::before {
-    background: radial-gradient(ellipse at center, $grey-black 0%, $grey-black 90%, $white 100%);
-  }
-
-  &--attractions:checked + label::before {
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-.feedback__label {
-  display: inline-flex;
-  margin-left: 22px;
-  margin-bottom: 7px;
-  cursor: pointer;
-
   &--impression {
+
+    @include font(18px, 700, 26px);
+    color: $grey-black;
+
     @media (min-width: $tablet-width) {
       margin-left: 76px;
     }
@@ -306,7 +226,7 @@
       width: 19px;
       height: 19px;
       padding: 0;
-      top: 1px;
+      top: 7px;
       left: 1px;
       border: 19px solid $light;
       border-radius: 50%;
@@ -353,6 +273,89 @@
   }
 }
 
+.feedback__field {
+  display: flex;
+  flex-grow: 1;
+  min-height: 26px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 15px;
+
+  @include font(18px, 700, 26px);
+  background-color: $grey;
+
+  border: none;
+
+  &[type="text"],
+  &[type="email"] {
+    border: none;
+  }
+
+  &::placeholder {
+    color: $black;
+    opacity: 1;
+  }
+
+  &--text {
+    min-height: 130px;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &--patronymic {
+  }
+
+  &--contact {
+/*    z-index: 20;*/
+    width: 178px;
+    padding: 16px 23px 16px 22px;
+    margin-bottom: 8px;
+    margin-left: 0;
+  }
+
+  &--impression:checked + label::before {
+    background: radial-gradient(ellipse at center, $grey-black 0%, $grey-black 90%, $white 100%);
+  }
+
+  &--attractions:checked + label::before {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.feedback__icon {
+/*  z-index: 10;*/
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $middle-light-grey;
+  }
+
+  &--phone::after {
+    content: "";
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email::after {
+    content: "";
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
 .feedback__button {
   width: 280px;
   margin-top: 51px;
@@ -385,7 +388,10 @@
   text-transform: none;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 0;
+    padding-top: 22px;
+    padding-bottom: 6px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &--attractions {
