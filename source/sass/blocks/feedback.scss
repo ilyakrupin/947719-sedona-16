@@ -16,6 +16,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 960px;
+    margin-bottom: 67px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -49,8 +50,14 @@
     @media (min-width: $tablet-width) {
       flex-grow: 1;
       order: 2;
-
       padding-left: 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-grow: 1;
+      order: 2;
+
+      padding-left: 80px;
     }
   }
 
@@ -86,6 +93,7 @@
 
     @media (min-width: $desktop-width) {
       width: 480px;
+      margin-bottom: 60px;
       order: 1;
     }
   }
@@ -99,6 +107,10 @@
       padding-left: 65px;
       border-top: 1px solid $very-light-grey;
       order: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
     }
   }
 
@@ -128,9 +140,20 @@
   margin-left: auto;
   margin-right: auto;
 
+  &--contact {
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
   &--attractions {
     @media (min-width: $tablet-width) {
       width: 520px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: auto;
     }
   }
 }
@@ -151,8 +174,7 @@
   padding-bottom: 16px;
   padding-left: 20px;
   padding-right: 20px;
-  /*background-color: $grey;*/
-  outline: 1px solid black;
+  background-color: $grey;
   border: 0;
 
   &--traveller {
@@ -169,6 +191,10 @@
 
     @media (min-width: $tablet-width) {
       width: 608px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 920px;
     }
 
     min-height: 120px;
@@ -205,8 +231,8 @@
 
   @media (min-width: $desktop-width) {
     &--attractions {
-      display: flex;
-      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
   }
 }
@@ -224,6 +250,11 @@
       width: 260px;
       margin-bottom: 8px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: auto;
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -231,6 +262,12 @@
   display: flex;
 
   @include font(14px, 400, 26px);
+
+  &--none {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 
   &--traveller {
     margin-bottom: 20px;
@@ -244,6 +281,14 @@
 
   &--contact {
     margin-left: 21px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 18px;
+    }
   }
 
   &--phone {
@@ -252,6 +297,13 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 79px;
+      width: 314px;
     }
 
     &::after {
@@ -267,6 +319,12 @@
 
   &--email {
     margin-top: 9px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      margin-bottom: 0;
+      flex-grow: 1;
+    }
 
     &::after {
       width: 58px;
@@ -301,6 +359,11 @@
       padding: 0;
       top: 6px;
       left: 0;
+
+      @media (min-width: $desktop-width) {
+        left: 4px;
+      }
+
       border: 19px solid $light;
       border-radius: 50%;
       background-color: $light;
@@ -358,10 +421,10 @@
 
 .feedback__caption {
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include font(18px, 700, 26px);
-
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     @include font(21px, 700, 26px);
@@ -372,13 +435,18 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 57px;
-      text-align: left;
+      margin-left: 0;
     }
   }
 
   &--contact {
     @media (min-width: $tablet-width) {
       margin-bottom: 24px;
+      padding: 0 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 75px;
       padding: 0 61px;
     }
   }
@@ -388,13 +456,18 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 52px;
-      text-align: left;
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 81px;
     }
   }
 
   &--attractions {
     width: 240px;
     margin-bottom: 19px;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 46px;
@@ -420,13 +493,15 @@
   @include font(21px, 700, 26px);
   text-transform: uppercase;
   color: $white;
-  background: none;
-  outline: 1px solid red;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     margin-left: 0;
     order: 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 479px;
   }
 }
 
