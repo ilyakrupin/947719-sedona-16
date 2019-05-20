@@ -30,6 +30,16 @@
 
   /* show off second triangle on inner pages */
   &--inner {
+    margin-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 54px;
+    }
+
     &::after {
       display: none;
     }
