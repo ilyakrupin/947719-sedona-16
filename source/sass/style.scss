@@ -3,7 +3,8 @@
 @import "variables";
 @import "mixins";
 @import "global";
-@import "pixelperfect";
+/*@import "pixelperfect";*/
+@import "pixelperfect-modal";
 @import "fonts";
 @import "blocks/page";
 @import "blocks/container";
@@ -21,3 +22,4 @@
 @import "blocks/video";
 @import "blocks/footer";
 @import "blocks/social";
+@import "blocks/modal";

@@ -1,0 +1,27 @@
+.bg-form {
+  @media (max-width: 767px) {
+    background-size: 320px;
+    background-image: url("../img/media/sedona-form-mobile-modal.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-size: 768px;
+    background-image: url("../img/media/sedona-form-tablet-success.jpg");
+    /*background-image: url("../img/media/sedona-form-tablet-failure.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 1280px;
+    background-image: url("../img/media/sedona-form-desktop-success.jpg");
+    /*background-image: url("../img/media/sedona-form-desktop-failure.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.5;
+  }
+}
