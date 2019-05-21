@@ -169,6 +169,16 @@
     @include font(18px, 700, 26px);
   }
 
+  &:hover,
+  &:focus {
+    background-color: $very-light-grey;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $white;
+  }
+
   flex-grow: 1;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -176,6 +186,7 @@
   padding-right: 20px;
   background-color: $grey;
   border: 0;
+
 
   &--traveller {
     margin-left: 17px;
