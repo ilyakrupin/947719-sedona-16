@@ -28,8 +28,17 @@
     background-size: cover;
   }
 
-  /* show off second triangle on inner pages */
-  &--inner {
+
+  &--photo {
+    margin-bottom: 0;
+
+    /* show off second triangle on inner pages */
+    &::after {
+      display: none;
+    }
+  }
+
+  &--form {
     margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
@@ -40,6 +49,7 @@
       margin-bottom: 54px;
     }
 
+    /* show off second triangle on inner pages */
     &::after {
       display: none;
     }
