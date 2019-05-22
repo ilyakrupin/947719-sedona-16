@@ -8,46 +8,50 @@
   margin-right: auto;
   background-color: $white;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-}
 
-.modal__show {
-  visibility: hidden;
-}
 
-.modal__success {
-  bottom: 106px;
-  min-height: 280px;
-  width: 320px;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    bottom: 384px;
-    min-height: 347px;
-    width: 640px;
+  &--success {
+    bottom: 106px;
+    min-height: 280px;
+    width: 320px;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      bottom: 384px;
+      min-height: 347px;
+      width: 640px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 381px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    bottom: 381px;
+
+  &--failure {
+    bottom: 475px;
+    min-height: 280px;
+    width: 320px;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      bottom: 225px;
+      min-height: 347px;
+      width: 400px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 112px;
+    }
+  }
+
+  &--show {
+    visibility: visible;
+    /*visibility: hidden;*/
   }
 }
 
-.modal__failure {
-  bottom: 475px;
-  min-height: 280px;
-  width: 320px;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    bottom: 225px;
-    min-height: 347px;
-    width: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    bottom: 112px;
-  }
-}
 
 .modal__caption {
   margin-left: auto;
@@ -98,10 +102,6 @@
     @media (min-width: $tablet-width) {
       width: auto;
       margin-bottom: 35px;
-    }
-
-    span {
-      display: block;
     }
   }
 
@@ -163,4 +163,9 @@
   &--failure {
     background-color: $white;
   }
+}
+
+
+.modal__wrap {
+  display: block;
 }

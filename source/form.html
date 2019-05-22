@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>Форма отзыва</title>
@@ -25,7 +25,8 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <div class="intro__image intro__image--inner"></div>
       <p class="intro__slogan intro__slogan--inner">Оставьте свой отзыв</p>
-      <p class="intro__advantages intro__advantages--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="intro__advantages intro__advantages--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них,
+        <span class="intro__wrap"> а также о посещенных вами достопримечательностях</span></p>
     </section>
     <form action="https://echo.htmlacademy.ru" class="feedback" method="post">
       <fieldset class="feedback__group feedback__group--traveller">
@@ -45,7 +46,7 @@
       <fieldset class="feedback__group feedback__group--contact">
         <legend class="feedback__caption feedback__caption--contact">Контактная информация:</legend>
         <div class="feedback__wrapper feedback__wrapper--contact">
-          <label class="feedback__block feedback__block--contact" for="phone"><span class="feedback__block--none">Контактный&nbsp;</span>телефон<sup>*</sup>:</label>
+          <label class="feedback__block feedback__block--contact" for="phone"><span class="feedback__none">Контактный&nbsp;</span>телефон<sup>*</sup>:</label>
           <div class="feedback__block feedback__block--phone">
             <input class="feedback__field feedback__field--contact" id="phone" maxlength="12" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required type="tel">
           </div>
@@ -109,15 +110,15 @@
       <p class="feedback__required">* — обязательные поля</p>
     </form>
 
-    <div class="modal modal__success modal__show">
+    <div class="modal modal--success modal--show">
       <h2 class="modal__caption modal__caption--success">Ваш отзыв отправлен!</h2>
-      <p class="modal__content modal__content--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<span>В ближайшее время мы опубликуем его на сайте.</span>
+      <p class="modal__content modal__content--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<span class="modal__wrap">В ближайшее время мы опубликуем его на сайте.</span>
       </p>
       <div class="modal__wrapper modal__wrapper--success">
         <button class="button modal__button modal__button--success" type="button">Закрыть окно</button>
       </div>
     </div>
-    <div class="modal modal__failure modal__show">
+    <div class="modal modal--failure modal--show">
       <h2 class="modal__caption modal__caption--failure">Что-то пошло не так!</h2>
       <p class="modal__content modal__content--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="modal__wrapper modal__wrapper--failure">
