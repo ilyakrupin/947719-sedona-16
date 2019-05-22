@@ -32,7 +32,7 @@
   &--photo {
     margin-bottom: 0;
 
-    /* show off second triangle on inner pages */
+    /* show off the second triangle on inner pages */
     &::after {
       display: none;
     }
@@ -49,7 +49,7 @@
       margin-bottom: 54px;
     }
 
-    /* show off second triangle on inner pages */
+    /* show off the second triangle on inner pages */
     &::after {
       display: none;
     }
@@ -65,6 +65,10 @@
   background-repeat: no-repeat;
   background-size: contain, 282px, auto;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 768px;
     min-height: 518px;
@@ -72,6 +76,10 @@
     background-position: bottom, 50% 46%, 50% 50%;
     background-repeat: no-repeat;
     background-size: auto, 460px, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -79,6 +87,10 @@
     margin-left: auto;
     margin-right: auto;
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   /* enable first triangle on pages */
