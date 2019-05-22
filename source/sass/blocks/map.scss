@@ -1,6 +1,17 @@
-.map__image {
-  margin: 0 auto;
+.map {
+  position: relative;
+}
+
+.map__static {
+  z-index: 10;
   max-height: 350px;
   min-width: 320px;
   width: 100%;
+}
+
+.map__dynamic {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  border: 0;
 }

@@ -28,8 +28,28 @@
     background-size: cover;
   }
 
-  /* show off second triangle on inner pages */
-  &--inner {
+
+  &--photo {
+    margin-bottom: 0;
+
+    /* show off second triangle on inner pages */
+    &::after {
+      display: none;
+    }
+  }
+
+  &--form {
+    margin-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 54px;
+    }
+
+    /* show off second triangle on inner pages */
     &::after {
       display: none;
     }
@@ -187,7 +207,14 @@
     line-height: 24px;
 
     @media (min-width: $tablet-width) {
-      width: 440px;
+      width: 455px;
     }
+  }
+}
+
+
+.intro__wrap {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

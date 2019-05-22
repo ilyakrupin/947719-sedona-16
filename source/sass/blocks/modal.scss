@@ -1,0 +1,171 @@
+.modal {
+  z-index: 150;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $white;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+
+  &--success {
+    bottom: 106px;
+    min-height: 280px;
+    width: 320px;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      bottom: 384px;
+      min-height: 347px;
+      width: 640px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 381px;
+    }
+  }
+
+
+  &--failure {
+    bottom: 475px;
+    min-height: 280px;
+    width: 320px;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      bottom: 225px;
+      min-height: 347px;
+      width: 400px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 112px;
+    }
+  }
+
+  &--show {
+    /*visibility: visible;*/
+    visibility: hidden;
+  }
+}
+
+
+.modal__caption {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include font(18px, 700, 26px);
+  text-align: center;
+
+  &--success {
+    margin-top: 42px;
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 61px;
+      margin-bottom: 31px;
+
+      @include font(30px, 700, 26px);
+    }
+  }
+
+  &--failure {
+    margin-top: 41px;
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      width: 230px;
+      margin-top: 56px;
+      margin-bottom: 24px;
+
+      @include font(30px, 700, 40px);
+    }
+  }
+}
+
+.modal__content {
+  width: 210px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include font(14px, 400, 24px);
+  text-align: center;
+
+  &--success {
+    width: 230px;
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      margin-bottom: 35px;
+    }
+  }
+
+  &--failure {
+    width: 230px;
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      width: 277px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.modal__button {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  color: $white;
+
+  &--success {
+    width: 100%;
+
+    @include font(18px, 700, 26px);
+
+    @media (min-width: $tablet-width) {
+      @include font(21px, 700, 26px);
+    }
+  }
+
+  &--failure {
+    width: 180px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @include font(18px, 700, 26px);
+
+    @media (min-width: $tablet-width) {
+      width: 270px;
+
+      @include font(21px, 700, 26px);
+    }
+  }
+}
+
+.modal__wrapper {
+  background-color: $grey;
+
+  &--success {
+    padding: 20px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 45px 91px;
+    }
+  }
+
+  &--failure {
+    background-color: $white;
+  }
+}
+
+
+.modal__wrap {
+  display: block;
+}
