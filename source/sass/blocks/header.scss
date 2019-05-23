@@ -18,6 +18,12 @@
   position: absolute;
   left: 0;
   right: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 188px;
+    height: auto;
+  }
+
   margin-left: auto;
   margin-right: auto;
 
