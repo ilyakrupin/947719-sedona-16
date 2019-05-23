@@ -19,6 +19,7 @@
   }
 }
 
+
 .hotel__header {
   @include font(21px, 700, 26px);
   color: $black;
@@ -27,6 +28,7 @@
     @include font(30px, 700, 26px);
   }
 }
+
 
 .hotel__comment {
   @include font(14px, 400, 24px);
@@ -39,11 +41,13 @@
   }
 }
 
+
 .hotel__header,
 .hotel__comment {
 
   text-align: center;
 }
+
 
 .hotel__button {
   width: 280px;
