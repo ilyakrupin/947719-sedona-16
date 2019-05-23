@@ -23,6 +23,30 @@
   }
 }
 
+.advantages__order {
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+
+  &--city {
+    order: 1;
+  }
+
+  &--bridge {
+    order: 1;
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+}
+
 .advantages__wrapper {
   padding-top: 21px;
   padding-bottom: 25px;
@@ -38,13 +62,6 @@
 
   @media (min-width: $desktop-width) {
     width: 400px;
-  }
-
-  &--media {
-    @media (min-width: $tablet-width) {
-      order: 3;
-      padding-top: 24px;
-    }
   }
 
   &--indents {
@@ -73,13 +90,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 800px;
-  }
-
-  &--media {
-    @media (min-width: $tablet-width) {
-      order: 2;
-    }
+    width: 800px;
   }
 }
 
@@ -196,14 +207,12 @@
 
   &--media {
     @media (min-width: $tablet-width) {
-      order: 3;
       padding-top: 0;
       padding-bottom: 9px;
       background-color: $light-grey;
     }
 
     @media (min-width: $desktop-width) {
-      order: 3;
       padding-top: 0;
       padding-bottom: 31px;
       background-color: $light-grey;
@@ -233,13 +242,13 @@
   &--order {
     &:nth-child(2) {
       @media (min-width: $tablet-width) {
-        order: 2;
+        order: 4;
       }
     }
 
     &:nth-child(3) {
       @media (min-width: $tablet-width) {
-        order: 1;
+        order: 3;
       }
     }
   }

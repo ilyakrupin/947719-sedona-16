@@ -33,14 +33,18 @@
       <p class="intro__advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
     <section class="advantages">
-      <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Городок Седона">
-      <div class="advantages__wrapper advantages__wrapper--indents">
+      <picture class="advantages__order">
+        <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
+        <img class="advantages__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Городок Седона">
+      </picture>
+      <div class="advantages__wrapper advantages__wrapper--indents advantages__order advantages__order--city">
         <h2 class="visually-hidden">Преимущества</h2>
         <h3 class="advantages__title">Настоящий городок</h3>
         <p class="advantages__number advantages__number--invert">&#8211; №1 &#8211;</p>
         <p class="advantages__subtitle advantages__subtitle--top">Седона не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <ul class="advantages__list">
+      <ul class="advantages__list advantages__order">
         <li class="advantages__item advantages__item--house">
           <h4 class="advantages__caption">Жилье</h4>
           <p class="advantages__recommend">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -57,14 +61,18 @@
       </ul>
     </section>
     <section class="advantages advantages--indents">
-      <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
-      <div class="advantages__wrapper advantages__wrapper--media">
+      <picture class="advantages__order">
+        <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
+        <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола">
+      </picture>
+      <div class="advantages__wrapper advantages__wrapper--media advantages__order advantages__order--bridge">
         <h3 class="advantages__title advantages__title--media">Там есть<span class="advantages__wrap"> мост дьявола</span>
         </h3>
         <p class="advantages__number advantages__number--invert">&#8211; №2 &#8211;</p>
         <p class="advantages__subtitle advantages__subtitle--bottom">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
       </div>
-      <ul class="advantages__list advantages__list--indents  advantages__list--media">
+      <ul class="advantages__list advantages__list--indents  advantages__list--media advantages__order">
         <li class="advantages__item advantages__item--indents">
           <h4 class="advantages__caption advantages__caption--bottom">Небольшая площадь</h4>
           <p class="advantages__number">&#8211; №3 &#8211;</p>
@@ -90,7 +98,11 @@
       <a class="button hotel__button" href="search-hotel.html">Найти гостиницу</a>
     </section>
     <section class="map">
-      <img class="map__static" src="img/bg-map-mobile@1x.jpg" height="350" alt="Интерактивная карта">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
+        <img class="map__static" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" height="350" alt="Интерактивная карта">
+      </picture>
       <h4 class="visually-hidden">Интерактивная карта</h4>
       <iframe class="map__dynamic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838158.1315711298!2d-112.35551198992647!3d34.85484026197822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sfi!4v1558515650035!5m2!1sru!2sfi" height="350" allowfullscreen></iframe>
     </section>
@@ -123,6 +135,7 @@
     </div>
   </footer>
 </div>
+<script src="js/picturefill.js"></script>
 <script src="js/script-menu.js"></script>
 </body>
 </html>
