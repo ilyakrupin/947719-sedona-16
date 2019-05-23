@@ -12,6 +12,7 @@
   }
 }
 
+
 .photo__list {
   @include list-reset;
 
@@ -31,6 +32,7 @@
   }
 }
 
+
 .photo__wrapper {
   position: relative;
   width: 280px;
@@ -49,6 +51,7 @@
     width: auto;
   }
 }
+
 
 .photo__container {
   @media (min-width: $tablet-width) {
@@ -70,6 +73,7 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
+
 
 .photo__item {
   position: relative;
@@ -114,17 +118,15 @@
     }
   }
 
-  /* ! temporary resized images ! */
   &:first-child {
     .photo__image {
       @media (min-width: $tablet-width) {
-        min-width: 648px;
-        height: 400px;
+        width: 648px;
+        height: auto;
       }
 
       @media (min-width: $desktop-width) {
-        min-width: 1200px;
-        height: 400px;
+        width: 1200px;
       }
     }
   }
@@ -132,13 +134,12 @@
   &:nth-child(2) {
     .photo__image {
       @media (min-width: $tablet-width) {
-        min-width: 324px;
-        height: 267px;
+        width: 324px;
+        height: auto;
       }
 
       @media (min-width: $desktop-width) {
-        min-width: 400px;
-        height: 267px;
+        width: 400px;
       }
     }
   }
@@ -146,13 +147,12 @@
   &:nth-child(3) {
     .photo__image {
       @media (min-width: $tablet-width) {
-        min-width: 324px;
-        height: 267px;
+        width: 324px;
+        height: auto;
       }
 
       @media (min-width: $desktop-width) {
-        min-width: 400px;
-        height: 267px;
+        width: 400px;
       }
     }
   }
@@ -160,17 +160,17 @@
   &:nth-child(4) {
     .photo__image {
       @media (min-width: $tablet-width) {
-        min-width: 324px;
-        height: 267px;
+        width: 324px;
+        height: auto;
       }
 
       @media (min-width: $desktop-width) {
-        min-width: 400px;
-        height: 267px;
+        width: 400px;
       }
     }
   }
 }
+
 
 .photo__caption {
   margin-bottom: 0;
@@ -187,6 +187,7 @@
     }
   }
 }
+
 
 .photo__author {
   margin-top: 0;
@@ -207,6 +208,7 @@
     }
   }
 }
+
 
 .photo__button {
   padding: 0;
@@ -236,20 +238,18 @@
   }
 }
 
+
 .photo__image-like {
   display: inline;
   margin-bottom: 0;
+  margin-right: 0;
+  fill: $black--opacity;
 
-  &--indents {
-    @media (min-width: $tablet-width) {
-      margin-right: 5px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-right: 5px;
-    }
+  @media (min-width: $desktop-width) {
+    fill: $white;
   }
 }
+
 
 .photo__counter {
   margin-bottom: 0;
@@ -258,12 +258,12 @@
   @include font(14px, 700, 24px);
 
   @media (min-width: $tablet-width) {
-    margin-left: 9px;
+    margin-left: 6px;
   }
 
   &--indents {
     @media (min-width: $tablet-width) {
-      margin-left: 1px;
+      margin-right: 8px;
     }
   }
 

@@ -179,6 +179,7 @@
   &:active,
   &:focus {
     background-color: $white;
+    outline: 4px solid $very-light-grey;
   }
 
   flex-grow: 1;

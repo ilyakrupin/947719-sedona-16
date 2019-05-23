@@ -23,6 +23,40 @@
   }
 }
 
+
+.advantages__image-wrapper {
+  height: 256px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+
+.advantages__order {
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+
+  &--city {
+    order: 1;
+  }
+
+  &--bridge {
+    order: 1;
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+}
+
+
 .advantages__wrapper {
   padding-top: 21px;
   padding-bottom: 25px;
@@ -40,13 +74,6 @@
     width: 400px;
   }
 
-  &--media {
-    @media (min-width: $tablet-width) {
-      order: 3;
-      padding-top: 24px;
-    }
-  }
-
   &--indents {
     padding-top: 59px;
     padding-bottom: 26px;
@@ -62,6 +89,7 @@
   }
 }
 
+
 .advantages__image {
   min-width: 320px;
   margin-left: auto;
@@ -73,15 +101,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 800px;
-  }
-
-  &--media {
-    @media (min-width: $tablet-width) {
-      order: 2;
-    }
+    width: 800px;
+    height: auto;
   }
 }
+
 
 .advantages__title {
   width: 280px;
@@ -115,6 +139,7 @@
   }
 }
 
+
 .advantages__number {
   padding-left: 20px;
   padding-right: 20px;
@@ -137,6 +162,7 @@
     }
   }
 }
+
 
 .advantages__subtitle {
   width: 280px;
@@ -171,6 +197,7 @@
   }
 }
 
+
 .advantages__list {
   @include list-reset;
   padding-top: 10px;
@@ -196,20 +223,19 @@
 
   &--media {
     @media (min-width: $tablet-width) {
-      order: 3;
       padding-top: 0;
       padding-bottom: 9px;
       background-color: $light-grey;
     }
 
     @media (min-width: $desktop-width) {
-      order: 3;
       padding-top: 0;
       padding-bottom: 31px;
       background-color: $light-grey;
     }
   }
 }
+
 
 .advantages__item {
   position: relative;
@@ -233,13 +259,13 @@
   &--order {
     &:nth-child(2) {
       @media (min-width: $tablet-width) {
-        order: 2;
+        order: 4;
       }
     }
 
     &:nth-child(3) {
       @media (min-width: $tablet-width) {
-        order: 1;
+        order: 3;
       }
     }
   }
@@ -328,6 +354,7 @@
   }
 }
 
+
 .advantages__caption {
   margin-top: 24px;
   margin-bottom: 10px;
@@ -351,6 +378,7 @@
     }
   }
 }
+
 
 .advantages__recommend {
   margin-top: 14px;
@@ -402,11 +430,13 @@
   }
 }
 
+
 .advantages__title,
 .advantages__number,
 .advantages__subtitle {
   text-align: center;
 }
+
 
 .advantages__wrap {
   @media (min-width: $tablet-width) {
