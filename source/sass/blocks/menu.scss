@@ -27,6 +27,7 @@
   }
 }
 
+
 .menu--opened .menu__toggle {
   display: block;
   bottom: auto;
@@ -39,6 +40,7 @@
   }
 }
 
+
 .menu--closed .menu__toggle {
   display: block;
   top: auto;
@@ -50,6 +52,7 @@
     display: none;
   }
 }
+
 
 .menu__list {
   display: none;
@@ -99,6 +102,7 @@
   }
 }
 
+
 .menu__link {
   display: block;
   padding-top: 7px;
@@ -121,6 +125,7 @@
   }
 }
 
+
 .menu__item:hover,
 .menu__item:focus,
 .menu__link:hover,
@@ -133,6 +138,7 @@
   }
 }
 
+
 .menu__link:active {
   background-color: $dusty-blue;
   color: rgba(255, 255, 255, 0.3);
@@ -142,6 +148,7 @@
     color: $black--opacity;
   }
 }
+
 
 .menu__link--active {
   @media (min-width: $tablet-width) {
@@ -178,6 +185,7 @@
     display: block;
   }
 }
+
 
 .menu--nojs .menu__toggle {
   display: none;
