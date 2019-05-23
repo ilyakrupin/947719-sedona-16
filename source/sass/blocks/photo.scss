@@ -242,15 +242,11 @@
 .photo__image-like {
   display: inline;
   margin-bottom: 0;
+  margin-right: 0;
+  fill: $black--opacity;
 
-  &--indents {
-    @media (min-width: $tablet-width) {
-      margin-right: 5px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-right: 5px;
-    }
+  @media (min-width: $desktop-width) {
+    fill: $white;
   }
 }
 
@@ -262,12 +258,12 @@
   @include font(14px, 700, 24px);
 
   @media (min-width: $tablet-width) {
-    margin-left: 9px;
+    margin-left: 6px;
   }
 
   &--indents {
     @media (min-width: $tablet-width) {
-      margin-left: 1px;
+      margin-right: 8px;
     }
   }
 
