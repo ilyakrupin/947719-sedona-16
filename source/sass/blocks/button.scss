@@ -26,5 +26,10 @@
 
   &--disabled {
     background: $very-light-grey;
+
+    &:hover,
+    &:focus {
+      background-color: $very-light-grey;
+    }
   }
 }
