@@ -46,8 +46,11 @@
     }
   }
 
-  &--show {
-    /*visibility: visible;*/
+  &--opened {
+    visibility: visible;
+  }
+
+  &--closed {
     visibility: hidden;
   }
 }

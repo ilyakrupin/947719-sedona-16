@@ -117,15 +117,17 @@
       <p class="feedback__required">* — обязательные поля</p>
     </form>
 
-    <div class="modal modal--success modal--show">
+    <!-- Показать модальное окно - удалить класс modal--closed -->
+    <div class="modal modal--success modal--opened modal--closed">
       <h2 class="modal__caption modal__caption--success">Ваш отзыв отправлен!</h2>
       <p class="modal__content modal__content--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<span class="modal__wrap">В ближайшее время мы опубликуем его на сайте.</span>
       </p>
-      <div class="modal__wrapper modal__wrapper--success">
+      <div class="modal__wrapper modal__wrapper--opened">
         <button class="button modal__button modal__button--success" type="button">Закрыть окно</button>
       </div>
     </div>
-    <div class="modal modal--failure modal--show">
+    <!-- Показать модальное окно - удалить класс modal--closed -->
+    <div class="modal modal--failure modal--opened modal--closed">
       <h2 class="modal__caption modal__caption--failure">Что-то пошло не так!</h2>
       <p class="modal__content modal__content--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="modal__wrapper modal__wrapper--failure">
