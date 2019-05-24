@@ -425,6 +425,15 @@
 }
 
 
+.feedback__field:focus + .feedback__block--attractions::before {
+  background-color: #e5e5e5;
+}
+
+.feedback__field:focus + .feedback__block--impression::before {
+  border-color: #e5e5e5;
+}
+
+
 .feedback__none {
   @media (min-width: $desktop-width) {
     display: none;
