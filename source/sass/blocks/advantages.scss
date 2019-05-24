@@ -4,12 +4,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     width: 768px;
     margin-top: 46px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,10 +25,10 @@
 
 
 .advantages__image-wrapper {
-  height: 256px;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
   align-items: center;
+  height: 256px;
 }
 
 
@@ -65,9 +65,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
     width: 256px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,8 +92,8 @@
 
 .advantages__image {
   min-width: 320px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     min-width: 512px;
@@ -109,11 +109,11 @@
 
 .advantages__title {
   width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @include font(18px, 700, 26px);
   color: $white;
@@ -141,11 +141,11 @@
 
 
 .advantages__number {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 9px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @include font(14px, 400, 21px);
 
@@ -166,11 +166,11 @@
 
 .advantages__subtitle {
   width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @include font(14px, 400, 21px);
   color: $white;
@@ -240,19 +240,19 @@
 .advantages__item {
   position: relative;
   width: 230px;
+  margin-right: auto;
   margin-bottom: 28px;
   margin-left: auto;
-  margin-right: auto;
-  padding-left: 70px;
   padding-right: 20px;
+  padding-left: 70px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     margin-bottom: 6px;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
     text-align: center;
   }
 
@@ -271,12 +271,12 @@
   }
 
   &--indents {
-    min-width: 280px;
     width: 280px;
-    padding-bottom: 26px;
+    min-width: 280px;
     margin-top: 26px;
-    padding-left: 0;
     padding-right: 0;
+    padding-bottom: 26px;
+    padding-left: 0;
 
     @media (min-width: $tablet-width) {
       min-width: auto;
@@ -297,15 +297,15 @@
 
   &::before {
     position: absolute;
-    content: "";
     width: 39px;
     height: 39px;
+    content: "";
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-width: $tablet-width) {
-      margin-left: auto;
       margin-right: auto;
+      margin-left: auto;
       background-size: contain;
     }
   }
@@ -318,8 +318,8 @@
 
     @media (min-width: $tablet-width) {
       top: -75px;
-      left: 0;
       right: 0;
+      left: 0;
       width: 75px;
       height: 72px;
     }
@@ -332,8 +332,8 @@
 
     @media (min-width: $tablet-width) {
       top: -78px;
-      left: 0;
       right: 0;
+      left: 0;
       width: 64px;
       height: 75px;
     }
@@ -346,8 +346,8 @@
 
     @media (min-width: $tablet-width) {
       top: -72px;
-      left: 0;
       right: 0;
+      left: 0;
       width: 77px;
       height: 68px;
     }
@@ -357,9 +357,9 @@
 
 .advantages__caption {
   margin-top: 24px;
+  margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
-  margin-right: auto;
 
   @include font(18px, 700, 26px);
   color: $black;
@@ -407,8 +407,8 @@
   }
 
   &--indents {
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
 
     @media (min-width: $tablet-width) {
       width: 170px;

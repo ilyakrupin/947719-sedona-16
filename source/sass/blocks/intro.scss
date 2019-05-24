@@ -15,13 +15,13 @@
 
   /* show on second triangle on pages */
   &::after {
-    z-index: 100;
     position: absolute;
-    content: "";
+    z-index: 100;
+    right: 0;
+    left: 0;
     min-width: 320px;
     min-height: 37px;
-    left: 0;
-    right: 0;
+    content: "";
     background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -61,8 +61,8 @@
   min-width: 320px;
   min-height: 388px;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom, 50% 51%;
   background-repeat: no-repeat;
+  background-position: bottom, 50% 51%;
   background-size: contain, 282px, auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -73,8 +73,8 @@
     min-width: 768px;
     min-height: 518px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: bottom, 50% 46%, 50% 50%;
     background-repeat: no-repeat;
+    background-position: bottom, 50% 46%, 50% 50%;
     background-size: auto, 460px, cover;
   }
 
@@ -84,8 +84,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@1x.jpg");
   }
 
@@ -97,11 +97,11 @@
   &::after {
     @media (min-width: $tablet-width) {
       position: absolute;
-      content: "";
-      height: 100%;
-      left: 0;
       right: 0;
       bottom: -25px;
+      left: 0;
+      height: 100%;
+      content: "";
       background-image: url("../img/bg-intro-triangle-tablet.svg");
       background-repeat: no-repeat;
       background-position: center bottom;
@@ -137,11 +137,11 @@
     &::after {
       @media (min-width: $tablet-width) {
         position: absolute;
-        content: "";
-        min-height: 100%;
-        left: 0;
         right: 0;
         bottom: -25px;
+        left: 0;
+        min-height: 100%;
+        content: "";
         background-image: url("../img/bg-intro-triangle-tablet.svg");
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -159,9 +159,9 @@
 .intro__slogan {
   width: 256px;
   margin-top: 40px;
+  margin-right: auto;
   margin-bottom: 27px;
   margin-left: auto;
-  margin-right: auto;
 
   @include font(18px, 700, 26px);
   text-align: center;
@@ -194,10 +194,10 @@
 
 
 .intro__advantages {
-  margin-bottom: 5px;
   width: 255px;
-  margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto;
 
   @include font(14px, 400, 26px);
   text-align: center;
@@ -208,8 +208,8 @@
   }
 
   &--photo {
-    width: 271px;
     line-height: 24px;
+    width: 271px;
 
     @media (min-width: $tablet-width) {
       width: 430px;
@@ -217,8 +217,8 @@
   }
 
   &--form {
-    width: 280px;
     line-height: 24px;
+    width: 280px;
 
     @media (min-width: $tablet-width) {
       width: 455px;

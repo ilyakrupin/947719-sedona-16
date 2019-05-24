@@ -1,15 +1,15 @@
 .presentation {
   width: 320px;
   margin-top: 0;
+  margin-right: auto;
   margin-bottom: 104px;
   margin-left: auto;
-  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 648px;
     margin-bottom: 42px;
-    padding-left: 60px;
     padding-right: 60px;
+    padding-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,8 +41,8 @@
 
 .presentation__comment {
   margin-bottom: 35px;
-  padding-left: 22px;
   padding-right: 22px;
+  padding-left: 22px;
 
   @include font(14px, 400, 24px);
   text-align: center;
@@ -50,7 +50,7 @@
 
   @media (min-width: $tablet-width) {
     width: 420px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }

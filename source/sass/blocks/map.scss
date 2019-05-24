@@ -5,16 +5,16 @@
 
 .map__static {
   z-index: 10;
-  max-height: 350px;
-  min-width: 320px;
   width: 100%;
+  min-width: 320px;
+  max-height: 350px;
 }
 
 
 .map__dynamic {
   position: absolute;
+  z-index: 20;
   top: 0;
   width: 100%;
-  z-index: 20;
   border: 0;
 }
