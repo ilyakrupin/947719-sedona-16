@@ -229,19 +229,19 @@
 
 
 .feedback__list {
+  flex-wrap: wrap;
+
   @include list-reset;
 
   @media (min-width: $tablet-width) {
     &--attractions {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--attractions {
-      flex-wrap: nowrap;
       justify-content: space-between;
     }
   }
