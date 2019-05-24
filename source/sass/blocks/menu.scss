@@ -10,13 +10,13 @@
 
 .menu__toggle {
   position: absolute;
-  display: block;
   right: 0;
   left: 257px;
-  margin-right: auto;
-  margin-left: auto;
+  display: block;
   width: 23px;
   height: 22px;
+  margin-right: auto;
+  margin-left: auto;
   cursor: pointer;
   border: none;
   background-repeat: no-repeat;
@@ -29,11 +29,11 @@
 
 
 .menu--opened .menu__toggle {
-  display: block;
-  bottom: auto;
   top: 17px;
-  background-image: url("../img/icon-cross.svg");
+  bottom: auto;
+  display: block;
   background-color: $light-grey-blue;
+  background-image: url("../img/icon-cross.svg");
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -42,11 +42,11 @@
 
 
 .menu--closed .menu__toggle {
-  display: block;
   top: auto;
   bottom: -37px;
-  background-image: url("../img/icon-menu.svg");
+  display: block;
   background-color: $white;
+  background-image: url("../img/icon-menu.svg");
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -62,6 +62,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 768px;
   }
@@ -133,44 +134,45 @@
   background-color: $grey-blue;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
     color: $light-grey-blue;
+    background-color: $white;
   }
 }
 
 
 .menu__link:active {
-  background-color: $dusty-blue;
   color: rgba(255, 255, 255, 0.3);
+  background-color: $dusty-blue;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
     color: $black--opacity;
+    background-color: $white;
   }
 }
 
 
 .menu__link--active {
   @media (min-width: $tablet-width) {
-    background-color: $white;
     color: $grey-brown;
+    background-color: $white;
   }
 
   &:hover,
   &:focus {
     @media (min-width: $tablet-width) {
-      background-color: $white;
       color: $very-grey-brown;
+      background-color: $white;
     }
   }
 
   &:active {
     @media (min-width: $tablet-width) {
-      background-color: $white;
       color: $grey-brown--opacity;
+      background-color: $white;
     }
   }
 }
+
 
 @media (max-width: 767px) {
   .menu--opened .menu__list {

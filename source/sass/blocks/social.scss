@@ -5,10 +5,11 @@
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
+
 
 .social__item {
   &:not(:last-child) {
@@ -65,11 +66,11 @@
 
   &::before {
     position: absolute;
-    content: "";
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    content: "";
     background-repeat: no-repeat;
     background-position: center;
   }

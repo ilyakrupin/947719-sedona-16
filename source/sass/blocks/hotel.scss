@@ -1,17 +1,17 @@
 .hotel {
-  background-color: #ffffff;
   width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-top: 5px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: auto;
     margin-top: 29px;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,19 +51,19 @@
 
 .hotel__button {
   width: 280px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   margin-top: 35px;
   margin-bottom: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   @include font(21px, 700, 26px);
 
   @media (min-width: $tablet-width) {
     width: 458px;
     margin-top: 43px;
+    margin-right: auto;
     margin-bottom: 59px;
     margin-left: auto;
-    margin-right: auto;
     padding-top: 16px;
     padding-bottom: 15px;
   }

@@ -1,7 +1,7 @@
 .header {
-  min-width: 320px;
   position: relative;
   z-index: 100;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
@@ -9,24 +9,23 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
 
 .header__logo-image {
   position: absolute;
-  left: 0;
   right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $desktop-width) {
     width: 188px;
     height: auto;
   }
-
-  margin-left: auto;
-  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     top: 0;

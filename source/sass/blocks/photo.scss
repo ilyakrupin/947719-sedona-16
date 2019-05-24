@@ -23,8 +23,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 648px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,15 +36,15 @@
 .photo__wrapper {
   position: relative;
   width: 280px;
-  margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
+  margin-left: auto;
   padding-right: 20px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     width: auto;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,11 +53,15 @@
 }
 
 
+.photo__link {
+  display: block;
+}
+
 .photo__container {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding-bottom: 12px;
     background-color: $grey;
 
@@ -68,8 +72,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    width: 100%;
     bottom: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -81,9 +85,9 @@
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
+    margin-right: auto;
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: auto;
   }
 
   &:not(:first-child) {
@@ -94,10 +98,10 @@
 
   &::before {
     position: absolute;
-    content: "";
-    left: 0;
     top: -24px;
+    left: 0;
     width: 100%;
+    content: "";
     border-bottom: 1px solid $very-light-grey;
 
     @media (min-width: $tablet-width) {
@@ -107,10 +111,10 @@
 
   &:last-child::after {
     position: absolute;
-    content: "";
+    bottom: -24px;
     width: 100%;
     margin-bottom: 7px;
-    bottom: -24px;
+    content: "";
     border-bottom: 1px solid $very-light-grey;
 
     @media (min-width: $tablet-width) {
@@ -190,11 +194,11 @@
 
 
 .photo__author {
-  margin-top: 0;
-  margin-bottom: 6px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 6px;
   text-transform: none;
   color: $grey-black;
 
@@ -212,9 +216,9 @@
 
 .photo__button {
   padding: 0;
+  cursor: pointer;
   border: none;
   background: none;
-  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-top: 11px;
@@ -241,8 +245,8 @@
 
 .photo__image-like {
   display: inline;
-  margin-bottom: 0;
   margin-right: 0;
+  margin-bottom: 0;
   fill: $black--opacity;
 
   @media (min-width: $desktop-width) {
@@ -268,7 +272,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $white;
     vertical-align: bottom;
+    color: $white;
   }
 }

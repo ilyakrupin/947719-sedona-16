@@ -1,7 +1,7 @@
 .video {
   position: relative;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     margin-top: 73px;
@@ -10,12 +10,10 @@
 
 
 .video__image {
-
   width: 320px;
   height: auto;
-
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -30,38 +28,38 @@
 
 
 .video__progress-container {
-  display: flex;
-  align-items: center;
   position: absolute;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  display: flex;
+  align-items: center;
   height: 45px;
   margin: 0 20px;
 
   background-color: rgba(0, 0, 0, 0.6);
 
   @media (min-width: $tablet-width) {
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
     height: 92px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
 
 .video__bar {
-  height: 3px;
   width: 235px;
-  margin-left: auto;
+  height: 3px;
   margin-right: auto;
+  margin-left: auto;
   background-color: rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
@@ -78,10 +76,10 @@
 
 .video__marker {
   position: absolute;
-  height: 10px;
-  width: 10px;
   top: 17px;
   left: 58px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: $white;
 
@@ -91,7 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 38px;
+    top: 40px;
     left: 205px;
   }
 }
@@ -99,13 +97,13 @@
 
 .video__controls-container {
   position: absolute;
-  display: flex;
+  right: 0;
   bottom: -67px;
   left: 0;
-  right: 0;
+  display: flex;
   width: 280px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: $light;
@@ -113,13 +111,13 @@
   @media (min-width: $tablet-width) {
     bottom: 11px;
     width: auto;
-    padding-left: 11px;
     padding-right: 17px;
+    padding-left: 11px;
     background: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    width: 800px;
   }
 
   button {
@@ -141,8 +139,8 @@
     }
 
     &:active {
-      fill: $grey-black;
       opacity: 0.3;
+      fill: $grey-black;
 
       @media (min-width: $tablet-width) {
         fill: rgba(255, 255, 255, 0.3);
@@ -161,8 +159,8 @@
   margin-left: 120px;
 
   @media (min-width: $tablet-width) {
-    margin-left: auto;
     margin-right: 17px;
+    margin-left: auto;
   }
 }
 
@@ -171,7 +169,7 @@
   margin-left: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
     margin-right: 17px;
+    margin-left: 0;
   }
 }
