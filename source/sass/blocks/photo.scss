@@ -53,6 +53,10 @@
 }
 
 
+.photo__link {
+  display: block;
+}
+
 .photo__container {
   @media (min-width: $tablet-width) {
     display: flex;
