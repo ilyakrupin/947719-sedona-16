@@ -11,7 +11,7 @@
   }
 
   &--indents {
-    margin-top: 31px;
+    margin-top: 38px;
     margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
@@ -24,6 +24,11 @@
 .academy__logo {
   display: block;
   fill: $black;
+  margin-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
 
   &:link,
   &:visited {
