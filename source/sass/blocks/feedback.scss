@@ -181,6 +181,7 @@
   &:hover,
   &:focus {
     border-color: $very-light-grey;
+    background-color: $very-light-grey;
   }
 
   &:active,
@@ -440,12 +441,12 @@
 
 
 .feedback__field:focus + .feedback__block--impression::before {
-  border-color: #e5e5e5;
+  border-color: $very-light-grey;
 }
 
 
 .feedback__field:focus + .feedback__block--attractions::before {
-  background-color: #e5e5e5;
+  background-color: $very-light-grey;
 }
 
 
