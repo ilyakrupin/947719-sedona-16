@@ -78,6 +78,12 @@
     width: 400px;
   }
 
+  &--bridge {
+    @media (min-width: $tablet-width) {
+      padding-top: 24px;
+    }
+  }
+
   &--indents {
     padding-top: 59px;
     padding-bottom: 26px;
@@ -284,6 +290,7 @@
 
     @media (min-width: $tablet-width) {
       min-width: auto;
+      margin-top: 26px;
     }
 
     &:not(:last-child) {
