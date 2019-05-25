@@ -45,7 +45,7 @@
   }
 
   &--traveller {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
       flex-grow: 1;
@@ -62,13 +62,17 @@
   }
 
   &--contact {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
 
     @media (min-width: $tablet-width) {
       order: 3;
       width: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 53px;
       border-top: 1px solid $very-light-grey;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 52px;
     }
   }
 
@@ -141,6 +145,7 @@
     @media (min-width: $desktop-width) {
       align-items: center;
       flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 
@@ -162,11 +167,8 @@
 .feedback__field {
   @include font(18px, 700, 26px);
   flex-grow: 1;
-  padding-top: 15px;
-  padding-right: 20px;
-  padding-bottom: 16px;
-  padding-left: 20px;
-  border: 0;
+  padding: 12px 16px;
+  border: 4px solid $grey;
   background-color: $grey;
 
   &::placeholder {
@@ -178,12 +180,13 @@
 
   &:hover,
   &:focus {
-    background-color: $very-light-grey;
+    border-color: $very-light-grey;
   }
 
   &:active,
   &:focus {
-    outline: 4px solid $very-light-grey;
+    border-color: $very-light-grey;
+    outline: none;
     background-color: $white;
   }
 
@@ -195,20 +198,30 @@
   &--contact {
     min-width: 1px;
     margin-left: 0;
+
+    @media (min-width: $tablet-width) {
+      max-width: 590px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 258px;
+    }
   }
 
   &--emotions {
     display: block;
     width: 238px;
+    max-width: none;
     min-height: 130px;
     max-height: 500px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 14px;
+    padding-top: 10px;
     resize: vertical;
 
     @media (min-width: $tablet-width) {
       width: 608px;
+      padding-top: 14px;
     }
 
     @media (min-width: $desktop-width) {
@@ -223,7 +236,7 @@
   &--attractions:checked + label::before {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 50% 39%;
   }
 }
 
@@ -297,11 +310,11 @@
   }
 
   &--phone {
-    margin-top: 9px;
+    margin-top: 7px;
     margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 21px;
+      margin-bottom: 23px;
     }
 
     @media (min-width: $desktop-width) {
@@ -325,6 +338,10 @@
 
   &--email {
     margin-top: 9px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 7px;
+    }
 
     @media (min-width: $desktop-width) {
       flex-grow: 1;
@@ -417,20 +434,18 @@
     &:active::before {
       opacity: 0.3;
       background-color: $grey-black;
-      background-image: url("../img/icon-tick.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
     }
   }
 }
 
 
-.feedback__field:focus + .feedback__block--attractions::before {
-  background-color: #e5e5e5;
-}
-
 .feedback__field:focus + .feedback__block--impression::before {
   border-color: #e5e5e5;
+}
+
+
+.feedback__field:focus + .feedback__block--attractions::before {
+  background-color: #e5e5e5;
 }
 
 
@@ -493,13 +508,17 @@
 
     @media (min-width: $tablet-width) {
       width: 400px;
-      margin-bottom: 46px;
+      margin-bottom: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 44px;
     }
   }
 
   &--emotions {
     @media (min-width: $tablet-width) {
-      margin-bottom: 58px;
+      margin-bottom: 55px;
       padding: 0 75px;
     }
   }
